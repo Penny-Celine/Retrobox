@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class RetroboxController extends AbstractController
 {
     /**
-     * @Route("/retrobox", name="retrobox")
+     * @Route("/", name="home")
      */
     public function index()
     {
@@ -16,4 +16,21 @@ class RetroboxController extends AbstractController
             'controller_name' => 'RetroboxController',
         ]);
     }
+    /**
+     * @Route("/retrobox", name= "mini-consoles")
+     */
+    public function displayMachines()
+    {
+        return $this->render('retrobox/consoles.html.twig');
+    }
+
+    /**
+     * @Route("/retrobox/NESmini", name= "one-mini")
+     */
+
+    public function displayAMachine()
+    {
+        return $this->render('retrobox/display-one.html.twig');
+    }
+
 }
