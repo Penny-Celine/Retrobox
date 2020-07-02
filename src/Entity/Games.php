@@ -20,7 +20,7 @@ class Games
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Name;
+    private $name;
 
     /**
      * @ORM\Column(type="integer")
@@ -38,11 +38,6 @@ class Games
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $image;
-
-    /**
      * @ORM\ManyToOne(targetEntity=MiniConsole::class, inversedBy="games")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -55,12 +50,12 @@ class Games
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
-    public function setName(string $Name): self
+    public function setName(string $name): self
     {
-        $this->Name = $Name;
+        $this->name = $name;
 
         return $this;
     }
@@ -101,17 +96,6 @@ class Games
         return $this;
     }
 
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
-
-    public function setImage(string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
 
     public function getEmulatedOn(): ?MiniConsole
     {

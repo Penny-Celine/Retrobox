@@ -3,63 +3,41 @@
 {% block title %}Retrobox - Les Mini-Consoles{% endblock %}
 
 {% block body %}
-    <h2>NES Mini</h2>
+    <h2>{{ miniConsole.title }}</h2>
     <div class="row">
-        <div class="row">
-            <div class="col-2">Année de sortie : 2018 </div>
-            <div class="col-2">Prix : 80€ </div>
-            <div class="col-2">Avis : Bon investissement</div>
+        <div class="col-12">
+            <span>Année de sortie : {{ miniConsole.releaseYear }} </span>
+            <span>Prix : {{ miniConsole.price }} </span>
+            <span>Avis : {{ miniConsole.opinion }}</span>
         </div>
+
         <div class="row">
-            <div class="col-6">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel temporibus illum 
-                repudiandae iste totam autem fugiat atque odit ipsa velit dolores voluptatem sint 
-                dicta expedita sunt, voluptas blanditiis assumenda beatae rerum laborum accusamus 
-                nihil quidem quo? Eligendi culpa dolores animi.</p>
+            <div class="row">
+                <div class="col-6">
+                    <p>{{ miniConsole.content | raw }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <thead>Liste des Jeux</thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Année de sortie</th>
+                        <th>Genre</th>
+                    </tr>
+                    {% for game in miniConsole.games %}
+                        <tr>
+                            <td>{{game.name}}</td>
+                            <td>{{game.releaseYear}}</td>
+                            <td>{{game.type}}</td>
+                        </tr>
+                    {% endfor %}
+                    
+                </table>
             </div>
         </div>
-        <img class="col-6" src="http://placehold.it/600x400" alt="">
-    </div>
-    
-    <div class="row">
-            <ul>
-                <li>
-                    <h3>Liste des jeux disponibles</h3>
-                </li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                <li>Jeu au pif</li>
-                
-            </ul>
+        <div class="col-6">
+            <img src="{{miniConsole.image}}" alt="">
         </div>
     </div>
 {% endblock %}

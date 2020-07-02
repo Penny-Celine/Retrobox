@@ -4,35 +4,28 @@
 
 {% block body %}
     <h1>Mini-Consoles</h1>
-    <article>
-        <h2>NES Mini</h2>
-        <div class="row">
-            <div class="col-2">Année de sortie : 2018 </div>
-            <div class="col-2">Prix : 80€ </div>
-            <div class="col-2">Avis : Bon investissement</div>
-            <img src="http://placehold.it/200x200" alt="">
-        </div>
-        <a href="{{ path('one-mini') }}" class="btn btn-primary">Voir</a>
-    </article>
-    <article>
-        <h2>NES Mini</h2>
-        <div class="row">
-            <div class="col-2">Année de sortie : 2018 </div>
-            <div class="col-2">Prix : 80€ </div>
-            <div class="col-2">Avis : Bon investissement</div>
-            <img src="http://placehold.it/200x200" alt="">
-        </div>
-        <a href="{{ path('one-mini') }}" class="btn btn-primary">Voir</a>
-    </article>
-    <article>
-        <h2>NES Mini</h2>
-        <div class="row">
-            <div class="col-2">Année de sortie : 2018 </div>
-            <div class="col-2">Prix : 80€ </div>
-            <div class="col-2">Avis : Bon investissement</div>
-            <img src="http://placehold.it/200x200" alt="">
-        </div>
-        <a href="{{ path('one-mini') }}" class="btn btn-primary">Voir</a>
-    </article>
-</div>
+    <div class="row">
+    
+        {% for miniConsole in miniConsoles %}
+            <div class="col-lg-3">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ asset(miniConsole.image) }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{miniConsole.title}}</h5>
+                        <p class="card-text">Année de sortie : {{miniConsole.ReleaseYear}}  Prix : {{miniConsole.price}}€ <br/>
+                            Avis : {{miniConsole.opinion}}   Dernière MAJ de l'article : Le {{miniConsole.lastModifiedAt | date('d/m/Y')}} à {{miniConsole.lastModifiedAt | date('H:i')}}<br/>
+                            {{ miniConsole.content[:20] | raw }}...
+                            <a href="{{ path('one-mini', {'id': miniConsole.id }) }}" class="btn btn-primary">Lire la suite</a>
+                        </p>
+                    </div>
+                </div>    
+
+            </div>
+        {% endfor %}
+    
+    </div>
+
+    
+    
 {% endblock %}

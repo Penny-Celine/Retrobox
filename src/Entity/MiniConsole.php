@@ -10,27 +10,16 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=MiniConsoleRepository::class)
  */
-class MiniConsole
+class MiniConsole extends Article
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
-    private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Name;
-
-    /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $ReleaseYear;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $price;
 
@@ -39,66 +28,38 @@ class MiniConsole
      */
     private $opinion;
 
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $description;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $image;
-
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $LastModifiedAt;
 
     /**
      * @ORM\OneToMany(targetEntity=Games::class, mappedBy="emulatedOn")
      */
     private $games;
 
+
     public function __construct()
     {
         $this->games = new ArrayCollection();
     }
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
-    public function getName(): ?string
-    {
-        return $this->Name;
-    }
 
-    public function setName(string $Name): self
-    {
-        $this->Name = $Name;
-
-        return $this;
-    }
-
-    public function getReleaseYear(): ?int
+    public function getReleaseYear(): ?string
     {
         return $this->ReleaseYear;
     }
 
-    public function setReleaseYear(int $ReleaseYear): self
+    public function setReleaseYear(string $ReleaseYear): self
     {
         $this->ReleaseYear = $ReleaseYear;
 
         return $this;
     }
 
-    public function getPrice(): ?int
+    public function getPrice(): ?string
     {
         return $this->price;
     }
 
-    public function setPrice(int $price): self
+    public function setPrice(string $price): self
     {
         $this->price = $price;
 
@@ -113,18 +74,6 @@ class MiniConsole
     public function setOpinion(string $opinion): self
     {
         $this->opinion = $opinion;
-
-        return $this;
-    }
-
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-
-    public function setDescription(string $description): self
-    {
-        $this->description = $description;
 
         return $this;
     }
@@ -183,4 +132,5 @@ class MiniConsole
 
         return $this;
     }
+
 }

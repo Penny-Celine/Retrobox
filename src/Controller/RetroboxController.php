@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\MiniConsole;
 
 class RetroboxController extends AbstractController
 {
@@ -12,25 +13,32 @@ class RetroboxController extends AbstractController
      */
     public function index()
     {
-        return $this->render('retrobox/index.html.twig', [
-            'controller_name' => 'RetroboxController',
-        ]);
+        return $this->render('retrobox/index.html.twig');
     }
     /**
      * @Route("/retrobox", name= "mini-consoles")
      */
     public function displayMachines()
     {
-        return $this->render('retrobox/consoles.html.twig');
+        $miniConsolesRepo = $this->getDoctrine()->getRepository(MiniConsole::class);
+        $miniConsoles = $miniConsolesRepo->findAll();
+
+        return $this->render('retrobox/consoles.html.twig', [
+            'miniConsoles' => $miniConsoles
+        ]);
     }
 
     /**
-     * @Route("/retrobox/NESmini", name= "one-mini")
+     * @Route("/retrobox/{id}", name= "one-mini")
      */
 
-    public function displayAMachine()
+    public function displayAMachine($id)
     {
-        return $this->render('retrobox/display-one.html.twig');
+        $repo = $this->getDoctrine()->getRepository(MiniConsole::class);
+        $miniConsole = $repo->find($id);
+        return $this->render('retrobox/display-one.html.twig', [
+            'miniConsole' => $miniConsole
+        ]);
     }
 
 }

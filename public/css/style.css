@@ -1,0 +1,39 @@
+@font-face
+{
+	font-family: "PressStart2P";
+	src: url("../fonts/PressStart2P-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+    background-color: #2B3E50;
+}
+
+
+.dropdown-toggle:hover .dropdown-menu
+{
+    display: block;
+}
+
+.jumbotron
+{
+    background-image: url("../images/computers.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.jumbotron h1
+{
+    color: #00FE00;
+    font-family: "PressStart2P", Arial, Helvetica, sans-serif;
+    /*background-color: rgba(255,255,255, 0.2);*/
+    border-radius: 15px;
+    padding-top: 1em;
+}
+
+.jumbotron p
+{
+    color: black;
+}
