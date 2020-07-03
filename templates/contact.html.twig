@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Retrobox - Contact{% endblock %}
+
+{% block body %}
+    <h1>Contact</h1>
+
+    {{ form_start(formContact) }}
+        {{form_widget(formContact)}}
+    {{ form_end(formContact) }}
+
+
+{% endblock %}

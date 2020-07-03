@@ -41,3 +41,13 @@ body
 {
     color: black;
 }
+
+img
+{
+    max-height: 400px;
+}
+
+span
+{
+    font-weight: bold;
+}

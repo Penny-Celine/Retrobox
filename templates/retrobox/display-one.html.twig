@@ -5,40 +5,40 @@
 {% block body %}
     <h2>{{ miniConsole.title }}</h2>
     <div class="row">
-        <div class="col-12">
-            <span>Année de sortie : {{ miniConsole.releaseYear }} </span>
-            <span>Prix : {{ miniConsole.price }} </span>
-            <span>Avis : {{ miniConsole.opinion }}</span>
-        </div>
 
+        <span class="col-lg-4">Année de sortie : {{ miniConsole.releaseYear }} </span>
+        <span class="col-lg-4">Prix : {{ miniConsole.price }} </span>
+        <span class="col-lg-4">Avis : {{ miniConsole.opinion }}</span>
+
+    </div>
+    <div class="row">
         <div class="row">
-            <div class="row">
-                <div class="col-6">
-                    <p>{{ miniConsole.content | raw }}</p>
-                </div>
+            <div class="col-lg-6">
+                <p>{{ miniConsole.content | raw }}</p>
             </div>
-            <div class="row">
-                <table>
-                    <thead>Liste des Jeux</thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Année de sortie</th>
-                        <th>Genre</th>
-                    </tr>
-                    {% for game in miniConsole.games %}
-                        <tr>
-                            <td>{{game.name}}</td>
-                            <td>{{game.releaseYear}}</td>
-                            <td>{{game.type}}</td>
-                        </tr>
-                    {% endfor %}
-                    
-                </table>
+            <div class="col-lg-6">
+                <img src="{{ asset(miniConsole.image) }}" alt="image">
             </div>
         </div>
-        <div class="col-6">
-            <img src="{{miniConsole.image}}" alt="">
+        <div class="row">
+            <table>
+                <thead>Liste des Jeux</thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Année de sortie</th>
+                    <th>Genre</th>
+                </tr>
+                {% for game in miniConsole.games %}
+                    <tr>
+                        <td>{{game.name}}</td>
+                        <td>{{game.releaseYear}}</td>
+                        <td>{{game.type}}</td>
+                    </tr>
+                {% endfor %}
+                    
+            </table>
         </div>
     </div>
+        
 {% endblock %}
 
