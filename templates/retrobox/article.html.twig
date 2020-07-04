@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Retrobox - Do It Yourself {% endblock %}
+
+{% block body %}
+    <h2>{{ article.title }}</h2>
+    <div class="row">
+        <span class=" offset-6 col-4 ">Dernière Mise à jour de l'article : {{ article.lastModifiedAt | date('d/m/Y')}} à {{article.lastModifiedAt | date('H:i')}} </span>
+    </div>
+    <div class="row">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>{{ article.content | raw }}</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ asset(article.image) }}" alt="image">
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}
+

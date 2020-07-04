@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css" >
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta name= "description" content= "Blog de rétro-gaming francophone où on vous présente les mini-consoles sorties ces dernières années ainsi que la solution Recalbox" />
+        <meta name="author" content="Céline Maupoux" />
+
         <title>{% block title %}Retrobox.fr blog de retro-gaming{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css" >
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" >
+        {% endblock %}
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -15,32 +21,28 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Accueil</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ path('mini-consoles') }}" 
-                        role="button" aria-haspopup="true" aria-expanded="true">Mini-Consoles</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ path('mini-consoles') }}">NES Mini</a>
-                        <a class="dropdown-item" href="{{ path('mini-consoles') }}">PSX</a>
-                        <a class="dropdown-item" href="{{ path('mini-consoles') }}">Megadrive Mini</a>
-                        <a class="dropdown-item" href="{{ path('mini-consoles') }}">Megadrive Flashback</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Switch-online">Switch Online</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">DIY</a>
-                    <div class="dropdown-menu" style="">
-                        <a class="dropdown-item" href="/Articles/Materiel">Matériel</a>
-                        <a class="dropdown-item" href="/Articles/Recalbox">Recalbox</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
+                <ul class="navbar-nav mr-auto nav-pills">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('mini-consoles') }}">Mini-Consoles</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="DIYLink" class="nav-link dropdown-toggle" data-toggle="dropdown" href=#DIY 
+                            role="button" aria-haspopup="true" aria-expanded="false">DIY</a>
+                        <div id="DIY" class="dropdown-menu" style="">
+                            <a class="dropdown-item" href="{{ path('article', {'title': 'DIY - Le Matériel' }) }}">Matériel</a>
+                            <a class="dropdown-item" href="{{ path('article', {'title': 'DIY - Recalbox' }) }}">Recalbox</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('contact') }}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('legal') }}">Mentions légales</a>
+                    </li>
                 </ul>
 
             </div>
@@ -50,6 +52,14 @@
             {% block body %}{% endblock %} 
         </div>
         
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+        
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+            
+
+        {% endblock %}
     </body>
 </html>

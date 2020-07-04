@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        {% block title %}Retrobox.fr blog de retro-gaming{% endblock %}
+    </head>
+    <body>
+
+        <div class="container">
+            {% block body %}
+                <h1>Bonjour {{ name }},</h1>
+                <p> Nous avons bien reçu votre message :<br/><br/>
+                    {{ content }}<br/><br/>
+                    Nous vous recontacterons à ce sujet à l'adresse : {{ email }} dès que possible.<br/>
+                    Merci !<br/>
+                    Cordialement,<br/><br/>
+                    <span style="font-weight:bold">Team Retrobox</span><br/>
+                    retrobox.game@gmail.com
+                </p>
+                
+            
+            {% endblock %} 
+        </div>
+
+    <body>
+</html>
+
+    

@@ -17,9 +17,13 @@ body
 }
 
 
-.dropdown-toggle:hover .dropdown-menu
+.dropdown-toggle:active > .dropdown-menu
 {
-    display: block;
+    position: absolute; 
+    transform: translate3d(0px, 40px, 0px); 
+    top: 0px; 
+    left: 0px; 
+    will-change: transform;
 }
 
 .jumbotron
@@ -27,6 +31,7 @@ body
     background-image: url("../images/computers.jpg");
     background-size: cover;
     text-align: center;
+    border : 2px solid #00FE00;
 }
 
 .jumbotron h1
@@ -42,6 +47,16 @@ body
     color: black;
 }
 
+#home-row
+{
+    justify-content: center;
+}
+
+#home-text
+{
+    display : none;
+}
+
 img
 {
     max-height: 400px;
@@ -50,4 +65,9 @@ img
 span
 {
     font-weight: bold;
+}
+
+.table-secondary
+{
+    border: 1px solid white;
 }

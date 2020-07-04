@@ -2,13 +2,15 @@
 
 {% block title %}Retrobox - Les Mini-Consoles{% endblock %}
 
+
 {% block body %}
     <h2>{{ miniConsole.title }}</h2>
     <div class="row">
 
-        <span class="col-lg-4">Année de sortie : {{ miniConsole.releaseYear }} </span>
-        <span class="col-lg-4">Prix : {{ miniConsole.price }} </span>
-        <span class="col-lg-4">Avis : {{ miniConsole.opinion }}</span>
+        <span class="col-lg-3">Sortie : {{ miniConsole.releaseYear }} </span>
+        <span class="col-lg-3">Prix : {{ miniConsole.price }} € </span>
+        <span class="col-lg-3">Avis : {{ miniConsole.opinion }} </span>
+        <span class="col-lg-3">Dernière MAJ de l'article : Le {{miniConsole.lastModifiedAt | date('d/m/Y')}} à {{miniConsole.lastModifiedAt | date('H:i')}}</span>
 
     </div>
     <div class="row">
@@ -20,25 +22,67 @@
                 <img src="{{ asset(miniConsole.image) }}" alt="image">
             </div>
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Liste des Jeux</h3>
+        </div>
+        <div class="col-lg-6">
+            <h3>Commentaires</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 col-md-6">
             <table>
-                <thead>Liste des Jeux</thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Année de sortie</th>
-                    <th>Genre</th>
-                </tr>
+                <thead>
+                    <tr class="table-primary">
+                        <th>Nom</th>
+                        <th>Année</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
                 {% for game in miniConsole.games %}
-                    <tr>
+                    <tr class="table-secondary">
                         <td>{{game.name}}</td>
                         <td>{{game.releaseYear}}</td>
                         <td>{{game.type}}</td>
                     </tr>
                 {% endfor %}
-                    
+                        
             </table>
         </div>
+        <div class="row">
+            <div class="col-lg-6">
+                {% for comment in comments %}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{comment.author}}</h5>
+                            <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
+                                {{ comment.content | raw }}
+                            </p>
+                        </div>
+                    </div>    
+                {% endfor %}
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-lg-12">
+                {{ form_start(formComment) }}
+
+                    {{ form_row(formComment.author, { 'attr': {'placeholder':"Entrez votre nom"}} )}}
+            
+                    {{ form_row(formComment.content , { 'attr': {'placeholder':"Entrez votre message"}} )}}
+
+                    <button type="submit" class="btn btn-success">Soumettre</button>
+
+                {{ form_end(formComment) }}
+            </div>
+        </div>
     </div>
+
         
 {% endblock %}
 

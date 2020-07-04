@@ -4,9 +4,16 @@
 
 {% block body %}
     <h1>Contact</h1>
+    <p> {{message}} </p>
 
     {{ form_start(formContact) }}
-        {{form_widget(formContact)}}
+
+        {{ form_row(formContact.nom , { 'attr': {'placeholder':"Entrez votre nom"}} )}}
+        {{ form_row(formContact.email , { 'attr': {'placeholder':"Entrez votre adresse mail"}} )}}
+        {{ form_row(formContact.message , { 'attr': {'placeholder':"Entrez votre message"}} )}}
+
+        <button type="submit" class="btn btn-success">Envoyer</button>
+
     {{ form_end(formContact) }}
 
 

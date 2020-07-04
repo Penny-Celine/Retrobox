@@ -10,4 +10,41 @@
     
     
 </div>
+<div class="container">
+    <div class="row">
+        <h2>Bienvenue !</h2>
+    </div>
+    <div id="home-row" class="row">
+
+        <button id="more-info-btn" class="btn-primary">En savoir plus</button>
+    
+        <p id="home-text" class="col-lg-12">
+            Vous vous trouvez sur notre blog de retro-gaming francophone. 
+            Nous sommes des amateurs de jeux vidéos depuis l'enfance et la nostalgie (dans l'air du temps) nous pousse à chercher les sensations de jeux de cette époque.<br/>
+            Vous trouverez ici toutes sortes de moyens de rejouer "comme à l'époque" : <br/>
+            <a href="{{ path('mini-consoles') }}"> Mini-consoles, Switch Online</a>,<br/>
+            <a href="{{ path('article', {'title': 'DIY - Le Matériel' }) }}">Raspberry Pi 3B+,<br/>
+            <a href="{{ path('article', {'title': 'DIY - Recalbox' }) }}">Recalbox</a>...<br/>
+            Bref nous allons parler d'émulation.<br/>
+            Dans la section "Mini-Consoles", vous trouverez un article pour chaque machine émulant une ancienne console ou un "ordinosaure".<br/>
+            Ces articles sont là pour vous aider à faire le bon choix avant d'investir dans du matériel.<br/>
+            Les articles "Matériel" et "Recalbox" vous permettront de vous lancer dans le DIY(fait-maison) en vous montrant la simplicité et les économies réalisées par certaines solutions.<br/>
+            Pour toute question, n'hésitez pas à remplir un <a href="{{ path('contact') }}">Formulaire de Contact</a>.<br/>
+            <br/>
+            Bonne visite !<br/>
+        </p>
+
+    </div>
+    
+    
+
+    
+
+
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/custom.js') }}"></script>
 {% endblock %}
