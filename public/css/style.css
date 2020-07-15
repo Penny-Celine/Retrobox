@@ -13,6 +13,7 @@ body
 
 .card
 {
+    width: 22rem;
     margin: 15px;
 }
 
@@ -70,4 +71,42 @@ span
 .table-secondary
 {
     border: 1px solid white;
+}
+
+
+/* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- */
+
+@media all and (max-width: 1024px)
+{
+    .display-2
+    {
+        max-width: 900px;
+        font-size: 2.5rem ;
+    }
+}
+
+@media all and (max-width: 480px)
+{
+    .display-2
+    {
+        font-size: 1.8rem ;
+    }
+
+    .card
+    {
+        width: 18rem;
+        margin: 10px;
+    }
+
+    .mc-content
+    {
+        max-width: 400px;
+        margin-left: 5px;
+    }
+
+    img
+    {
+        max-width: 400px;
+    }
+
 }

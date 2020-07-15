@@ -15,8 +15,8 @@
     </div>
     <div class="row">
         <div class="row">
-            <div class="col-lg-6">
-                <p>{{ miniConsole.content | raw }}</p>
+            <div class="col-lg-6 col-sm-12">
+                <p class="mc-content">{{ miniConsole.content | raw }}</p>
             </div>
             <div class="col-lg-6">
                 <img src="{{ asset(miniConsole.image) }}" alt="image">
@@ -54,11 +54,11 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                {% for comment in comments %}
+                {% for comment in miniConsole.comments %}
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">{{comment.author}}</h5>
-                            <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
+                            <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y à H:i')}}<br/>
                                 {{ comment.content | raw }}
                             </p>
                         </div>

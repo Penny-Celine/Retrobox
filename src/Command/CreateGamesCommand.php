@@ -11,7 +11,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\DBAL\Connection;
 use Symfony\Component\HttpFoundation\Response;
 
-use App\Services\ConvertCsvToArray;
+use App\Service\ConvertCsvToArray;
 
 use App\Entity\Games;
 use App\Entity\MiniConsole;

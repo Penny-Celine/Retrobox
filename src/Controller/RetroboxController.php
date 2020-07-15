@@ -16,6 +16,7 @@ use App\Entity\MiniConsole;
 use App\Entity\Article;
 use App\Entity\Comment;
 use App\Form\CommentType;
+use App\Repository\ArticleRepository;
 
 class RetroboxController extends AbstractController
 {
@@ -36,7 +37,7 @@ class RetroboxController extends AbstractController
     }
 
     /**
-     * @Route("/retrobox", name= "mini-consoles")
+     * @Route("/mini-consoles", name= "mini-consoles")
      */
     public function displayMachines()
     {
@@ -49,45 +50,36 @@ class RetroboxController extends AbstractController
     }
 
     /**
-     * @Route("/retrobox/{id}", name= "one-mini")
+     * @Route("/mini-consoles/{title}", name= "one-mini")
      */
 
-    public function displayAMachine($id, Request $request)
+    public function displayAMachine($title, Request $request, ArticleRepository $article, EntityManagerInterface $manager)
     {
         $miniConsole = $this->getDoctrine()
                             ->getRepository(MiniConsole::class)
-                            ->find($id);
+                            ->findOneByTitle($title);
 
-
-        $commentRepo = $this->getDoctrine()->getRepository(Comment::class);
-
-        $manager = $this->getDoctrine()->getManager();
-        $relatedArticle = $this->getDoctrine()
-                                ->getRepository(Article::class)
-                                ->find($id);
-
-        $comments = $commentRepo->findByRelatedTo($relatedArticle);
+        $comments = $miniConsole->getComments();
 
         $comment = new Comment();
         $formComment = $this->createForm(CommentType::class, $comment);
-
+    
         $formComment->handleRequest($request);
         if ($formComment->isSubmitted() && $formComment->isValid())
         {
-
+    
             $comment->setCreatedAt(new \DateTime());
             $comment->setisReported(false);
             $comment->setRelatedTo($relatedArticle);
             $manager->persist($comment);
             $manager->flush();
-
-            return $this->redirectToRoute('one-mini', ['id' => $id]);
-
+    
+            return $this->redirectToRoute('one-mini', ['title' => $title]);
+    
         }
-
+        
         return $this->render('retrobox/display-one.html.twig', [
             'miniConsole' => $miniConsole,
-            'comments' => $comments,
             'formComment' => $formComment->createView()
         ]);
         
@@ -167,12 +159,34 @@ class RetroboxController extends AbstractController
      * @Route("/{title}", name= "article")
      */
 
-    public function displayArticle($title)
+    public function displayArticle($title, Request $request, ArticleRepository $article, EntityManagerInterface $manager)
     {
         $repo = $this->getDoctrine()->getRepository(Article::class);
         $article = $repo->findOneByTitle($title);
+
+        $comments = $article->getComments();
+
+        $comment = new Comment();
+        $formComment = $this->createForm(CommentType::class, $comment);
+
+        $formComment->handleRequest($request);
+        if ($formComment->isSubmitted() && $formComment->isValid())
+        {
+
+            $comment->setCreatedAt(new \DateTime());
+            $comment->setisReported(false);
+            $comment->setRelatedTo($article);
+            $manager->persist($comment);
+            $manager->flush();
+
+            return $this->redirectToRoute('article', ['title' => $title]);
+
+        }
+
         return $this->render('retrobox/article.html.twig', [
-            'article' => $article
+            'article' => $article,
+            'formComment' => $formComment->createView()
+        
         ]);
     }
 
