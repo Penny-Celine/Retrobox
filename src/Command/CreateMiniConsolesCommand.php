@@ -15,6 +15,7 @@ use App\Service\ConvertCsvToArray;
 
 use App\Entity\Games;
 use App\Entity\MiniConsole;
+use App\Entity\Article;
 
 class CreateMiniConsolesCommand extends Command
 {
