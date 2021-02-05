@@ -13,7 +13,7 @@
                     <img class="card-img-top" src={{ asset(miniConsole.image) }} alt="Card image cap"/>
                     <div class="card-body">
                         <h5 class="card-title">{{miniConsole.title}}</h5>
-                        <p class="card-text">Année de sortie : {{miniConsole.ReleaseYear}}  |  Prix : {{miniConsole.price}}€ <br/>
+                        <p class="card-text"><span class="badge badge-primary">Année de sortie : {{miniConsole.ReleaseYear}}</span>  |  <span class="badge badge-info">Prix : {{miniConsole.price}}€</span> <br/>
                             Avis : {{miniConsole.opinion}}   |  Dernière MAJ de l'article : Le {{miniConsole.lastModifiedAt | date('d/m/Y')}} à {{miniConsole.lastModifiedAt | date('H:i')}}<br/>
                             {{ miniConsole.content[:20] | raw }}...
                             <a href="{{ path('one-mini', {'title': miniConsole.title }) }}" class="btn btn-primary">Lire la suite</a>

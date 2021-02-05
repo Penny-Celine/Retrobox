@@ -17,6 +17,7 @@ use App\Entity\Article;
 use App\Entity\Comment;
 use App\Form\CommentType;
 use App\Repository\ArticleRepository;
+use App\Repository\MiniConsoleRepository;
 
 class RetroboxController extends AbstractController
 {
@@ -39,10 +40,10 @@ class RetroboxController extends AbstractController
     /**
      * @Route("/mini-consoles", name= "mini-consoles")
      */
-    public function displayMachines()
+    public function displayMachines( MiniConsoleRepository $miniConsolesRepo)
     {
-        $miniConsolesRepo = $this->getDoctrine()->getRepository(MiniConsole::class);
-        $miniConsoles = $miniConsolesRepo->findAll();
+    
+        $miniConsoles = $miniConsolesRepo->findBy( array(), array('title' => 'asc'));
 
         return $this->render('retrobox/consoles.html.twig', [
             'miniConsoles' => $miniConsoles
@@ -53,11 +54,8 @@ class RetroboxController extends AbstractController
      * @Route("/mini-consoles/{title}", name= "one-mini")
      */
 
-    public function displayAMachine($title, Request $request, ArticleRepository $article, EntityManagerInterface $manager)
+    public function displayAMachine($title, MiniConsole $miniConsole, Request $request, EntityManagerInterface $manager)
     {
-        $miniConsole = $this->getDoctrine()
-                            ->getRepository(MiniConsole::class)
-                            ->findOneByTitle($title);
 
         $comments = $miniConsole->getComments();
 
@@ -70,7 +68,7 @@ class RetroboxController extends AbstractController
     
             $comment->setCreatedAt(new \DateTime());
             $comment->setisReported(false);
-            $comment->setRelatedTo($relatedArticle);
+            $comment->setRelatedTo($miniConsole);
             $manager->persist($comment);
             $manager->flush();
     
@@ -154,15 +152,26 @@ class RetroboxController extends AbstractController
         
     }
 
+    /**
+     * @Route("/registration", priority=10 , name="security_registration")
+     */
+    public function registration(){
+        $user = new User;
+        $form = $this->createForm(RegistrationType::class, $user);
+
+        return $this->render('security/registration.html.twig', [
+            'form' => $form->createView()
+        ]);
+
+    }
+
 
     /**
-     * @Route("/{title}", name= "article")
+     * @Route("/{title<#^DIY#>}", name= "article")
      */
 
-    public function displayArticle($title, Request $request, ArticleRepository $article, EntityManagerInterface $manager)
+    public function displayArticle($title, Request $request, Article $article, EntityManagerInterface $manager)
     {
-        $repo = $this->getDoctrine()->getRepository(Article::class);
-        $article = $repo->findOneByTitle($title);
 
         $comments = $article->getComments();
 

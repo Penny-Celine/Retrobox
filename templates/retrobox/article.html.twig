@@ -9,11 +9,20 @@
     </div>
     <div class="row">
         <div class="row">
-            <div class="col-lg-6">
-                <p>{{ article.content | raw }}</p>
+            <div id="intro-container" class="col-lg-6">
+                <button id="intro-btn" class="btn-primary">Afficher l'intro</button>
+                <p id="intro-text" class="col-lg-12">C’est bien gentil toutes ces mini-consoles, mais il doit bien exister un moyen de rejouer à ce qu’on veut sans acheter toutes les machines de la terre, non ? <br/>
+Oui ! Il existe bien des solutions, dont une a largement l'avantage sur les autres : le Raspberry Pi.<br/>
+Il s’agit, pour faire simple, d’un ordinateur miniature conçu par un professeur d'université dans un but pédagogique (plus simple à comprendre et à programmer qu'un PC). Pour l’utiliser de façon optimale, des passionnés ont conçu un système d’exploitation dédié au rétrogaming : Recalbox ! <br/>
+A partir de cette alliance, on obtient la possibilité de jouer à la Super Nintendo, la Sega Master System, l’Amiga et tant d’autres… Et ça, branchée sur la télé du salon ou sur n’importe quel écran HDMI, connectée à notre manette Bluetooth préférée (ou USB), à l’aide d’une machine pas plus grande qu’un paquet de cigarettes (désolé pour l’analogie, mais vous avez l’image), et enfin qui ne consomme pas plus de courant que votre chargeur de smartphone !<br/></p>
             </div>
             <div class="col-lg-6">
                 <img src="{{ asset(article.image) }}" alt="image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                {{ article.content | raw }}
             </div>
         </div>
     </div>
@@ -28,6 +37,7 @@
                     <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
                         {{ comment.content | raw }}
                     </p>
+                    <button type="submit" class="btn btn-warning btn-report">Signaler</button>
                 </div>
             </div>    
         {% endfor %}
@@ -47,5 +57,10 @@
         </div>
     </div>
         
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/intro.js') }}"></script>
 {% endblock %}
 

@@ -101,9 +101,9 @@ class CreateGamesCommand extends Command
             
             // Updating info
             
-            $game->setName($row['name'])
-                 ->setType($row['type'])
+            $game->setType($row['type'])
                  ->setReleaseYear(intval($row['releaseYear']))
+                 ->setDescription($row['description'])
                  ->setEmulatedOn($miniConsole);
 
   

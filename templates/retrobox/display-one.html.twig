@@ -24,65 +24,70 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
-            <h3>Liste des Jeux</h3>
-        </div>
-        <div class="col-lg-6">
-            <h3>Commentaires</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-5 col-md-6">
-            <table>
-                <thead>
-                    <tr class="table-primary">
-                        <th>Nom</th>
-                        <th>Année</th>
-                        <th>Genre</th>
-                    </tr>
-                </thead>
-                {% for game in miniConsole.games %}
-                    <tr class="table-secondary">
-                        <td>{{game.name}}</td>
-                        <td>{{game.releaseYear}}</td>
-                        <td>{{game.type}}</td>
-                    </tr>
-                {% endfor %}
-                        
-            </table>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                {% for comment in miniConsole.comments %}
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">{{comment.author}}</h5>
-                            <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y à H:i')}}<br/>
-                                {{ comment.content | raw }}
-                            </p>
-                        </div>
-                    </div>    
-                {% endfor %}
+        <div class="col-lg-6 col-sm-12">
+            <div class="row">
+                <div clas="col-lg-12">
+                    <h3>Liste des Jeux</h3>
+                </div>
+                <div class="col-lg-12">
+                    <table>
+                        <thead>
+                            <tr class="table-primary">
+                                <th>Nom</th>
+                                <th>Année</th>
+                                <th>Genre</th>
+                                {% if miniConsole.id == 12 %}
+                                    <th>Plateforme d'origine</th>
+                                {% endif %}
+                            </tr>
+                        </thead>
+                        {% for game in miniConsole.games %}
+                            <tr class="table-secondary">
+                                <td>{{game.name}}</td>
+                                <td>{{game.releaseYear}}</td>
+                                <td>{{game.type}}</td>
+                                {% if miniConsole.id == 12 %}
+                                    <td>{{game.description}}</td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                            
+                    </table>
+                </div>
             </div>
         </div>
-        
+        <div class="col-lg-6 col-sm-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Commentaires</h3>
+                </div>
+                <div class="col-lg-12">
+                    {% for comment in miniConsole.comments %}
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{comment.author}}</h5>
+                                <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y à H:i')}}<br/>
+                                    {{ comment.content | raw }}
+                                </p>
+                            </div>
+                        </div>    
+                    {% endfor %}
+                </div>
+ 
+                <div class="col-lg-12">
+                    {{ form_start(formComment) }}
 
-        <div class="row">
-            <div class="col-lg-12">
-                {{ form_start(formComment) }}
+                        {{ form_row(formComment.author, { 'attr': {'placeholder':"Entrez votre nom"}} )}}
+                            
+                        {{ form_row(formComment.content , { 'attr': {'placeholder':"Entrez votre message"}} )}}
 
-                    {{ form_row(formComment.author, { 'attr': {'placeholder':"Entrez votre nom"}} )}}
-            
-                    {{ form_row(formComment.content , { 'attr': {'placeholder':"Entrez votre message"}} )}}
+                        <button type="submit" class="btn btn-success">Soumettre</button>
 
-                    <button type="submit" class="btn btn-success">Soumettre</button>
-
-                {{ form_end(formComment) }}
+                    {{ form_end(formComment) }}
+                </div>
             </div>
-        </div>
+        </div>      
     </div>
-
         
 {% endblock %}
 

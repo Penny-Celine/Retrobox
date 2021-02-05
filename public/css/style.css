@@ -55,7 +55,22 @@ body
 
 #home-text
 {
+    font-size: 1.1em;
     display : none;
+}
+
+#intro
+{
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+}
+
+#intro-text
+{
+    font-style: italic;
+    font-size: 0.9em;
+    visibility: hidden;
 }
 
 img
@@ -72,6 +87,37 @@ span
 {
     border: 1px solid white;
 }
+
+
+.shopping-list td
+{
+    padding: 10px;
+    border: 2px solid #DF691A;
+}
+
+p
+{
+    text-align: justify;
+}
+.intro
+{
+    font-style: italic;
+    font-size: 1.1em;
+    color : lightgray;
+}
+
+blockquote
+{
+    border: 2px solid #DF691A;
+    font-style: italic;
+}
+
+blockquote span
+{
+   float: right;
+}
+
+
 
 
 /* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- *//* ------MEDIA QUERIES------- */

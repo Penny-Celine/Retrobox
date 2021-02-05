@@ -1,577 +1,584 @@
-"name";"type";"releaseYear";"miniConsole"
-"3-D Tic-Tac-Toe";"puzzle";"1980";"6"
-"Adventure";"rpg";"1979";"6"
-"Adventure II";"rpg";"2005";"6"
-"Air-Sea Battle";"shoot'em up";"1977";"6"
-"Aquaventure";"shoot'em up";"1983";"6"
-"Asteroids";"shoot'em up";"1981";"6"
-"Atari Climber";"arcade";"1987";"6"
-"Backgammon";"board";"1979";"6"
-"Barnstorming";"course";"1982";"6"
-"Basketball";"sport";"1979";"6"
-"Beamrider";"shoot'em up";"1984";"6"
-"Black Jack";"board";"1977";"6"
-"Bloody Human Freeway";"arcade";"1981";"6"
-"Bowling";"sport";"1978";"6"
-"Boxing";"sport";"1980";"6"
-"Breakout";"arcade";"1978";"6"
-"Bridge";"board";"1980";"6"
-"Canyon Bomber ";"shoot'em up";"1978";"6"
-"Centipede";"arcade";"1982";"6"
-"Championship Soccer";"sport";"1980";"6"
-"Checkers";"board";"1980";"6"
-"Chopper Command";"shoot'em up";"1982";"6"
-"Circus Atari";"arcade";"1978";"6"
-"Combat Two";"shoot'em up";"1982";"6"
-"Combat";"shoot'em up";"1978";"6"
-"Cosmic Commuter";"arcade";"1984";"6"
-"Crackpots";"shoot'em up";"1983";"6"
-"Crystal Castles";"arcade";"1984";"6"
-"Decathlon";"sport";"";"6"
-"Demons to Diamonds";"shoot'em up";"1982";"6"
-"Desert Falcon";"shoot'em up";"1987";"6"
-"Dodge Em";"arcade";"1980";"6"
-"Dolphin";"arcade";"1983";"6"
-"Double Dunk";"sport";"1988";"6"
-"Dragster";"course";"1980";"6"
-"Enduro";"course";"1983";"6"
-"Fatal Run";"course";"1989";"6"
-"Fishing Derby";"arcade";"1980";"6"
-"Flag Capture";"puzzle";"1978";"6"
-"Football";"sport";"1988";"6"
-"Freeway";"arcade";"1981";"6"
-"Frog Pond";"arcade";"1982";"6"
-"Front Line";"arcade";"1984";"6"
-"Frostbite";"arcade";"1983";"6"
-"Fun with Numbers";"education";"1977";"6"
-"Golf";"sport";"1978";"6"
-"Grand Prix";"course";"1982";"6"
-"Gravitar";"shoot'em up";"1983";"6"
-"H.E.R.O.";"action";"1984";"6"
-"Hangman";"board";"1978";"6"
-"Haunted House";"aventure";"1981";"6"
-"Home Run";"sport";"1978";"6"
-"Human Cannonball";"shoot'em up";"1978";"6"
-"Ice Hockey";"sport";"1981";"6"
-"Indy 500";"course";"1978";"6"
-"Jungle Hunt";"arcade";"1983";"6"
-"Kaboom!";"arcade";"1981";"6"
-"Keystone Kapers";"plateforme";"1983";"6"
-"Laser Blast";"shoot'em up";"1981";"6"
-"Maze Craze";"arcade";"1978";"6"
-"Megamania";"shoot'em up";"1982";"6"
-"Millipede";"arcade";"1984";"6"
-"Miniature Golf";"sport";"1978";"6"
-"Missile Command";"arcade";"1980";"6"
-"MotoRodeo";"course";"1990";"6"
-"Night Driver";"course";"1980";"6"
-"Off The Wall";"arcade";"1989";"6"
-"Oink!";"arcade";"1983";"6"
-"Outlaw";"shoot'em up";"1979";"6"
-"Pitfall II: Lost Caverns";"plateforme";"1984";"6"
-"Pitfall!";"plateforme";"1983";"6"
-"Plaque Attack";"shoot'em up";"1983";"6"
-"Polaris";"shoot'em up";"1983";"6"
-"Pong (Video Olympics)";"arcade";"1977";"6"
-"Pressure Cooker";"arcade";"1983";"6"
-"Radar Lock";"shoot'em up";"1989";"6"
-"Realsports Baseball";"sport";"1982";"6"
-"Realsports Basketball";"sport";"1983";"6"
-"Realsports Soccer";"sport";"1982";"6"
-"Realsports Volleyball";"sport";"1983";"6"
-"Return to Haunted";"aventure";"2005";"6"
-"River Raid";"shoot'em up";"1982";"6"
-"River Raid II";"shoot'em up";"1988";"6"
-"Robot Tank";"shoot'em up";"1983";"6"
-"Saboteur";"shoot'em up";"1983";"6"
-"Save Mary";"arcade";"1989";"6"
-"Seaquest";"shoot'em up";"1983";"6"
-"Secret Quest";"aventure";"1989";"6"
-"Skiing";"sport";"1980";"6"
-"Sky Diver";"arcade";"1978";"6"
-"Slot Machine";"puzzle";"1979";"6"
-"Slot Racers";"arcade";"1978";"6"
-"Solaris";"simulation";"1986";"6"
-"Space Invaders";"shoot'em up";"1980";"6"
-"Space War";"shoot'em up";"1978";"6"
-"Spider Fighter";"shoot'em up";"1982";"6"
-"Sprintmaster";"course";"1988";"6"
-"Stampede";"action";"1981";"6"
-"Star Ship";"simulation";"1977";"6"
-"Starmaster";"simulation";"1982";"6"
-"Steeplechase";"sport";"1980";"6"
-"Stellar Track";"textuel";"1980";"6"
-"Street Racer";"course";"1977";"6"
-"Submarine Commander";"simulation";"1982";"6"
-"Super Baseball";"sport";"";"6"
-"Super Breakout";"arcade";"1978";"6"
-"Super Football";"sport";"1988";"6"
-"Surround";"arcade";"1977";"6"
-"Swordquest: Earthworld";"rpg";"1982";"6"
-"Swordquest: Fireworld";"rpg";"1983";"6"
-"Swordquest: Waterworld";"rpg";"1984";"6"
-"Tempest";"shoot'em up";"1981";"6"
-"Tennis";"sport";"1981";"6"
-"Video Checkers";"board";"1980";"6"
-"Video Chess";"board";"1979";"6"
-"Video Pinball";"flipper";"1978";"6"
-"Warlords";"action";"1981";"6"
-"Wizard";"aventure";"2005";"6"
-"Yars  Return";"shoot'em up";"2005";"6"
-"Yars  Revenge";"shoot'em up";"1981";"6"
-"House";"aventure";"1982";"6"
-"Balloon Fight";"arcade";"1984";"11"
-"Bubble Bobble";"plateforme";"1988";"11"
-"Castlevania";"action";"1986";"11"
-"Castlevania II: Simon's Quest";"action";"1989";"11"
-"Donkey Kong";"plateforme";"1983";"11"
-"Donkey Kong Jr.";"plateforme";"1986";"11"
-"Double Dragon II: The Revenge";"beat'em up";"1989";"11"
-"Dr Mario";"puzzle";"1989";"11"
-"Excitebike";"course";"1984";"11"
-"Final Fantasy";"rpg";"1987";"11"
-"Galaga";"shoot'em up";"1984";"11"
-"Ghosts'n Goblins";"action";"1986";"11"
-"Gradius";"shoot'em up";"1986";"11"
-"Ice Climber";"arcade";"1984";"11"
-"Kid Icarus";"plateforme";"1986";"11"
-"Kirby's Adventure";"plateforme";"1993";"11"
-"Mario Bros.";"arcade";"1986";"11"
-"Mega Man 2";"action";"1988";"11"
-"Metroid";"plateforme";"1986";"11"
-"Ninja Gaiden";"action";"1988";"11"
-"Pac-Man";"arcade";"1984";"11"
-"Punch-Out!!";"sport";"1987";"11"
-"StarTropics";"rpg";"1990";"11"
-"Super C";"action";"1988";"11"
-"Super Mario Bros.";"plateforme";"1983";"11"
-"Super Mario Bros. 2";"plateforme";"1988";"11"
-"Super Mario Bros. 3";"plateforme";"1990";"11"
-"Tecmo Bowl";"sport";"1988";"11"
-"The Legend of Zelda";"rpg";"1987";"11"
-"Zelda II: The Adventure of Link";"rpg";"1988";"11"
-"Donkey Kong Country";"plateforme";"1994";"16"
-"EarthBound";"rpg";"1994";"16"
-"Final Fantasy VI (Final Fantasy III)";"rpg";"1994";"16"
-"F-Zero";"course";"1991";"16"
-"Kirby's Dream Course";"course";"1995";"16"
-"Kirby's Fun Pak (Kirby Super Star)";"mini-jeux";"1996";"16"
-"Mega Man X";"action";"1994";"16"
-"Secret of Mana";"rpg";"1994";"16"
-"Star Fox";"shoot'em up";"1993";"16"
-"Star Fox 2";"shoot'em up";"2017";"16"
-"Street Fighter II': Hyper Fighting";"combat";"1993";"16"
-"Super Castlevania IV";"action";"1992";"16"
-"Super Ghouls'n Ghosts";"action";"1992";"16"
-"Super Mario Kart";"course";"1992";"16"
-"Super Mario RPG: Legend of the Seven Stars";"rpg";"1996";"16"
-"Super Mario World";"plateforme";"1992";"16"
-"Super Mario World 2: Yoshi's Island";"plateforme";"1995";"16"
-"Super Metroid";"action";"1994";"16"
-"Super Probotector: Alien Rebels (Contra III)";"action";"1992";"16"
-"Super Punch-Out!!";"sport";"1994";"16"
-"The Legend of Zelda: A Link to the Past";"rpg";"1992";"16"
-"Adventures of Lolo";"puzzle";"1989";"12"
-"Adventures of Lolo 2";"puzzle";"1990";"12"
-"Balloon Fight";"arcade";"1984";"12"
-"Baseball";"sport";"1983";"12"
-"Blaster Master (+ Special Version)";"action";"1988";"12"
-"City Connection";"plateforme";"1985";"12"
-"Clu Clu Land";"arcade";"1984";"12"
-"Clu Clu Land: Welcome to New Cluclu Land";"arcade";"1985";"12"
-"Crystalis";"rpg";"1990";"12"
-"Donkey Kong";"plateforme";"1983";"12"
-"Donkey Kong 3";"plateforme";"1983";"12"
-"Donkey Kong Jr.";"plateforme";"1986";"12"
-"Double Dragon";"beat'em all";"1987";"12"
-"Double Dragon II: The Revenge";"beat'em all";"1989";"12"
-"Dr. Mario  (+ Special Version)";"puzzle";"1990";"12"
-"Eliminator Boat Duel";"action";"1991";"12"
-"Excitebike";"course";"1985";"12"
-"Fire Emblem: Ankoku Ry? to Hikari no Tsurugi";"rpg";"1990";"12"
-"Ghosts'n Goblins  (+ Special Version)";"action";"1985";"12"
-"Gradius  (+ Special Version + Second loop)";"shoot'em up";"1986";"12"
-"Ice Climber";"arcade";"1985";"12"
-"Ice Hockey";"sport";"1988";"12"
-"Journey to Silius";"run'n gun";"1990";"12"
-"Joy Mech Fight";"combat";"1993";"12"
-"Kid Icarus  (+ Special Version)";"plateforme";"1986";"12"
-"Kirby's Adventure  (+ Special Version)";"plateforme";"1993";"12"
-"Kung-Fu Heroes";"action";"1986";"12"
-"Mario and Yoshi";"puzzle";"1991";"12"
-"Mario Bros.";"arcade";"1986";"12"
-"Metroid  (+ Special Version Mother Brain battle & Ridley battle)";"action";"1987";"12"
-"Mighty Bomb Jack";"arcade";"1987";"12"
-"NES Open Tournament Golf  (+ Special Version)";"sport";"1991";"12"
-"Ninja Gaiden  (+ Special Version)";"action";"1988";"12"
-"Pro Wrestling";"combat";"1986";"12"
-"Punch-Out!!";"sport";"1987";"12"
-"River City Ransom";"action";"1989";"12"
-"Shadow of the Ninja";"action";"1990";"12"
-"Soccer";"sport";"1985";"12"
-"Solomon's Key";"puzzle";"1986";"12"
-"Star Soldier  (+ Special Version)";"shoot'em up";"1986";"12"
-"StarTropics";"action";"1990";"12"
-"Super Dodge Ball";"sport";"1988";"12"
-"Super Mario Bros.";"plateforme";"1983";"12"
-"Super Mario Bros. 2";"plateforme";"1988";"12"
-"Super Mario Bros. 3";"plateforme";"1990";"12"
-"Super Mario Bros.: The Lost Levels";"plateforme";"1986";"12"
-"Tecmo Bowl";"sport";"1988";"12"
-"Tennis";"sport";"1984";"12"
-"The Legend of Zelda  (+ Special Version)";"rpg";"1987";"12"
-"Tsuppari Oozumou";"combat";"1987";"12"
-"TwinBee  (+ Special Version)";"shoot'em up";"1986";"12"
-"Vice: Project Doom";"action";"1991";"12"
-"Volleyball";"sport";"1986";"12"
-"Vs. Excitebike";"course";"1988";"12"
-"Wario's Woods";"puzzle";"1994";"12"
-"Wrecking Crew";"arcade";"1985";"12"
-"Yie Ar Kung-Fu";"combat";"1985";"12"
-"Zelda II: The Adventure of Link";"rpg";"1988";"12"
-"Brawl Brothers";"beat'em all";"1993";"12"
-"Breath of Fire";"rpg";"1993";"12"
-"Breath of Fire II";"rpg";"1994";"12"
-"Demon's Crest";"action";"1994";"12"
-"F-Zero";"course";"1991";"12"
-"Joe and Mac 3: Lost in the Tropics";"plateforme";"1994";"12"
-"Kirby's Dream Course";"course";"1995";"12"
-"Kirby's Dream Land 3";"plateforme";"1997";"12"
-"Kirby's Fun Pak";"mini-jeux";"1996";"12"
-"Pilotwings";"simulation";"1992";"12"
-"Pop'n TwinBee";"shoot'em up";"1993";"12"
-"Smash Tennis";"sport";"1994";"12"
-"Star Fox";"shoot'em up";"1993";"12"
-"Star Fox 2";"shoot'em up";"2017";"12"
-"Stunt Race FX";"course";"1994";"12"
-"Super E.D.F Earth Defence Force";"shoot'em up";"1991";"12"
-"Super Ghouls'n Ghosts";"action";"1992";"12"
-"Super Mario Kart";"course";"1993";"12"
-"Super Mario World";"plateforme";"1992";"12"
-"Super Mario World 2: Yoshi's Island";"plateforme";"1995";"12"
-"Super Metroid";"action";"1994";"12"
-"Super Punch-Out!!";"sport";"1994";"12"
-"Super Puyo Puyo 2";"puzzle";"1995";"12"
-"Super Soccer";"sport";"1992";"12"
-"Super Tennis";"sport";"1992";"12"
-"The Legend of Zelda: A Link to the Past";"rpg";"1992";"12"
-"Alex Kidd in the Enchanted Castle";"plateforme";"1989";"9"
-"Alien Storm ";"beat'em up";"1991";"9"
-"Altered Beast ";"beat'em up";"1989";"9"
-"Arrow Flash ";"shoot'em up";"1990";"9"
-"Bonanza Bros. ";"plateforme";"1991";"9"
-"Chakan : The Forever Man ";"action";"1992";"9"
-"Columns III ";"puzzle";"1994";"9"
-"Columns ";"puzzle";"1990";"9"
-"Comix Zone ";"action";"1995";"9"
-"Crack Down ";"arcade";"1990";"9"
-"Decap Attack ";"plateforme";"1991";"9"
-"Dr. Robotnik's Mean Bean Machine ";"puzzle";"1993";"9"
-"E-SWAT : City Under Siege ";"action";"1990";"9"
-"Eternal Champions ";"combat";"1993";"9"
-"Fatal Labyrinth ";"rpg";"1990";"9"
-"Flicky ";"arcade";"1990";"9"
-"Gain Ground ";"action";"1991";"9"
-"Golden Axe II ";"beat'em up";"1989";"9"
-"Golden Axe III ";"beat'em up";"1991";"9"
-"Golden Axe ";"beat'em up";"1993";"9"
-"Jewel Master ";"plateforme";"1991";"9"
-"Kid Chameleon ";"plateforme";"1992";"9"
-"Mortal Kombat 3 ";"combat";"1995";"9"
-"Mortal Kombat II ";"combat";"1994";"9"
-"Mortal Kombat ";"combat";"1992";"9"
-"Phantasy Star II ";"rpg";"1989";"9"
-"Phantasy Star III : Generations of Doom ";"rpg";"1991";"9"
-"Phantasy Star IV ";"rpg";"1994";"9"
-"Ristar ";"plateforme";"1995";"9"
-"Shadow Dancer : The Secret of Shinobi ";"action";"1990";"9"
-"Shining Force: The Legacy of Great Intention ";"rpg";"1993";"9"
-"Shining Force II: The Ancient Seal ";"rpg";"1994";"9"
-"Shining in the Darkness ";"rpg";"1991";"9"
-"Shinobi III : Return of the Ninja Master ";"action";"1993";"9"
-"Sonic & Knuckles ";"plateforme";"1994";"9"
-"Sonic 3D Blast ";"plateforme";"1996";"9"
-"Sonic Spinball ";"flipper";"1993";"9"
-"Sonic the Hedgehog 2 ";"plateforme";"1992";"9"
-"Sonic the Hedgehog ";"plateforme";"1991";"9"
-"Super Thunder Blade ";"shoot'em up";"1989";"9"
-"Sword of Vermilion";"rpg";"1990";"9"
-"the Ooze";"action";"1995";"9"
-"Vectorman 2 ";"action";"1995";"9"
-"Vectorman ";"action";"1996";"9"
-"Virtua Fighter 2 ";"combat";"1997";"9"
-"Alex Kidd in High Tech World";"plateforme";"1989";"9"
-"Alex Kidd in Miracle World";"plateforme";"1987";"9"
-"Alex Kidd: The Lost Stars";"plateforme";"1988";"9"
-"Assault City ";"arcade";"1990";"9"
-"Astro Warrior ";"shoot'em up";"1986";"9"
-"Baku Baku Animal";"puzzle";"1995";"9"
-"Dragon Crystal";"rpg";"1990";"9"
-"Fantasy Zone";"shoot'em up";"1986";"9"
-"Fantasy Zone : The Maze";"shoot'em up";"1987";"9"
-"Kenseiden ";"action";"1988";"9"
-"Kung Fu Kid ";"action";"1987";"9"
-"Phantasy Star";"rpg";"1988";"9"
-"Psycho Fox ";"plateforme";"1989";"9"
-"Sonic Chaos";"plateforme";"1993";"9"
-"the Ninja ";"action";"1986";"9"
-"Sonic Drift 2";"course";"1995";"9"
-"Sonic Triple Trouble";"plateforme";"1994";"9"
-"Tails Adventure";"plateforme";"1995";"9"
-"Adventure in the park ";"arcade";"0";"9"
-"Air Hockey ";"arcade";"0";"9"
-"Bomber";"arcade";"0";"9"
-"Bubbles Master ";"arcade";"0";"9"
-"Cannon ";"rpg";"0";"9"
-"Checker ";"board";"0";"9"
-"Cross the Road ";"course";"0";"9"
-"Curling 2010 ";"sport";"0";"9"
-"Defenders of Oasis ";"rpg";"0";"9"
-"Fight or Lose ";"board";"0";"9"
-"Hexagonos ";"puzzle";"0";"9"
-"Jack's Pea ";"arcade";"0";"9"
-"Jewel Magic ";"puzzle";"0";"9"
-"Memory ";"puzzle";"0";"9"
-"Mr. Balls ";"puzzle";"0";"9"
-"Naval Power ";"simulation";"0";"9"
-"Plumbing Contest ";"puzzle";"0";"9"
-"Snail Maze ";"arcade";"0";"9"
-"Snake";"arcade";"0";"9"
-"Spider ";"arcade";"0";"9"
-"Super Columns ";"puzzle";"0";"9"
-"Wall-Breaking";"arcade";"0";"9"
-"Alex Kidd in the Enchanted Castle";"plateforme";"1989";"15"
-"Alisia Dragoon";"action";"1992";"15"
-"Altered Beast";"beat'em up";"1989";"15"
-"Castle of Illusion Starring Mickey Mouse";"plateforme";"1990";"15"
-"Castlevania: The New Generation";"action";"1994";"15"
-"Columns";"puzzle";"1990";"15"
-"Comix Zone";"action";"1995";"15"
-"Darius";"shoot'em up";"1990";"15"
-"Dr. Robotnik's Mean Bean Machine";"puzzle";"1993";"15"
-"Dynamite Headdy";"plateforme";"1994";"15"
-"Earthworm Jim";"plateforme";"1994";"15"
-"Ecco the Dolphin";"aventure";"1992";"15"
-"Eternal Champions";"combat";"1993";"15"
-"Ghouls 'n Ghosts";"plateforme";"1989";"15"
-"Golden Axe";"beat'em up";"1989";"15"
-"Gunstar Heroes";"run'n gun";"1993";"15"
-"Kid Chameleon";"plateforme";"1992";"15"
-"Landstalker";"rpg";"1993";"15"
-"Light Crusader";"rpg";"1995";"15"
-"Mega Man: The Wily Wars";"action";"1994";"15"
-"Monster World IV";"action";"1994";"15"
-"Phantasy Star IV: The End of the Millennium";"rpg";"1994";"15"
-"Probotector";"action";"1994";"15"
-"Road Rash II";"course";"1991";"15"
-"Shining Force";"rpg";"1993";"15"
-"Shinobi III";"action";"1993";"15"
-"Sonic The Hedgehog";"plateforme";"1991";"15"
-"Sonic The Hedgehog 2";"plateforme";"1992";"15"
-"Sonic Spinball";"flipper";"1993";"15"
-"Space Harrier 2";"shoot'em up";"1989";"15"
-"Street Fighter II' : Special Champion Edition";"combat";"1993";"15"
-"Streets of Rage 2";"beat'em up";"1992";"15"
-"Strider";"action";"1990";"15"
-"Super Fantasy Zone";"shoot'em up";"1992";"15"
-"Tetris";"puzzle";"2006";"15"
-"The Story of Thor";"rpg";"1994";"15"
-"Thunder Force III";"shoot'em up";"1990";"15"
-"ToeJam & Earl";"plateforme";"1991";"15"
-"Vectorman";"action";"1995";"15"
-"Virtua Fighter 2";"combat";"1997";"15"
-"Wonder Boy in Monster World";"plateforme";"1991";"15"
-"World of Illusion Starring Mickey Mouse & Donald Duck";"plateforme";"1992";"15"
-"Air Zonk";"shoot'em up";"1992";"13"
-"Akumaj? Dracula X Chi no Rondo (Castlevania)";"action";"1993";"13"
-"Aldynes";"shoot'em up";"1991";"13"
-"Alien Crush";"flipper";"1988";"13"
-"Appare! Gateball";"sport";"1988";"13"
-"Blazing Lazers (Gunhed)";"shoot'em up";"1989";"13"
-"Bomberman  93";"mini-jeux";"1992";"13"
-"Bomberman  94";"mini-jeux";"1993";"13"
-"Bomberman Panic Bomber";"mini-jeux";"1994";"13"
-"Bonk s Revenge";"plateforme";"1989";"13"
-"Bonk's Adventure";"plateforme";"1991";"13"
-"Cadash";"rpg";"1989";"13"
-"Chew-Man-Fu";"arcade";"1990";"13"
-"Ch? Aniki";"shoot'em up";"1992";"13"
-"Daimakaimura (Ghouls'n Ghosts)";"plateforme";"1990";"13"
-"Dragon Spirit";"shoot'em up";"1989";"13"
-"Dungeon Explorer";"rpg";"1989";"13"
-"Fantasy Zone";"shoot'em up";"1988";"13"
-"Galaga  88";"shoot'em up";"1988";"13"
-"Ginga Fukei Densetsu Sapphire";"shoot'em up";"1995";"13"
-"Gradius";"shoot'em up";"1991";"13"
-"Gradius II   Gofer no Yab?  ";"shoot'em up";"1992";"13"
-"J.J. & Jeff";"plateforme";"1990";"13"
-"Jaseiken Necromancer";"rpg";"1988";"13"
-"Lords of Thunder";"shoot'em up";"1993";"13"
-"Military Madness";"strategie ";"1990";"13"
-"Moto Roader";"course";"1989";"13"
-"Nectaris";"strategie ";"1989";"13"
-"Neutopia";"rpg";"1989";"13"
-"Neutopia II";"rpg";"1991";"13"
-"New Adventure Island";"plateforme";"1992";"13"
-"Ninja Ry?kenden (Ninja Gaiden)";"action";"1992";"13"
-"Ninja Spirit";"action";"1990";"13"
-"Parasol Stars";"arcade";"1991";"13"
-"Power Golf";"sport";"1989";"13"
-"Psychosis";"shoot'em up";"1990";"13"
-"R-Type";"shoot'em up";"1989";"13"
-"Salamander";"shoot'em up";"1991";"13"
-"Seirei Senshi Spriggan";"shoot'em up";"1991";"13"
-"Snatcher";"aventure";"1992";"13"
-"Soldier Blade";"shoot'em up";"1992";"13"
-"Space Harrier";"shoot'em up";"1990";"13"
-"Splatterhouse";"beat'em up";"1990";"13"
-"Spriggan Mark 2";"shoot'em up";"1992";"13"
-"Star Parodier";"shoot'em up";"1992";"13"
-"Super Darius";"shoot'em up";"1990";"13"
-"Super Momotar? Dentetsu II";"mini-jeux";"1988";"13"
-"Super Star Soldier";"shoot'em up";"1990";"13"
-"The Genji and the Heike Clans";"beat'em up";"1990";"13"
-"The Kung Fu (China Warrior)";"combat";"1987";"13"
-"The Legend of Valkyrie";"action";"1989";"13"
-"Victory Run";"course";"1989";"13"
-"Ys book I & II";"rpg";"1989";"13"
-"Battle Arena Toshinden";"combat";"1995";"14"
-"Cool Boarders 2";"sport";"1997";"14"
-"Destruction Derby";"course";"1995";"14"
-"Final Fantasy VII";"rpg";"1997";"14"
-"Grand Theft Auto";"action";"1997";"14"
-"Intelligent Qube";"puzzle";"1997";"14"
-"Jumping Flash";"fps";"1995";"14"
-"Metal Gear Solid";"infiltration";"1998";"14"
-"Mr Driller";"puzzle";"1999";"14"
-"Oddworld: Abe s Oddysee";"plateforme";"1997";"14"
-"Rayman";"plateforme";"1995";"14"
-"Resident Evil Director s Cut";"survie";"1996";"14"
-"Revelations: Persona";"rpg";"1996";"14"
-"Ridge Racer Type 4";"course";"1999";"14"
-"Super Puzzle Fighter II Turbo";"puzzle";"1996";"14"
-"Syphon Filter";"infiltration";"1999";"14"
-"Tekken 3";"combat";"1997";"14"
-"Tom Clancy s Rainbow 6";"fps";"1998";"14"
-"Twisted Metal";"action";"1995";"14"
-"Wild Arms";"rpg";"1996";"14"
-"3 Count Bout";"combat";"1993";"10"
-"Art of Fighting";"combat";"1994";"10"
-"Blazing Star";"shoot'em up";"1998";"10"
-"Blue s Journey";"shoot'em up";"1991";"10"
-"Crossed Swords";"beat'em up";"1991";"10"
-"Fatal Fury Special";"combat";"1993";"10"
-"Foot Ball Frenzy";"sport";"1992";"10"
-"Garou : Mark of the Wolves";"combat";"1999";"10"
-"Ghost Pilots";"shoot'em up";"1991";"10"
-"King of the Monsters";"beat'em up";"1991";"10"
-"King of the Monsters 2";"beat'em up";"1992";"10"
-"Kizuna Encounter : Super Tag Battle";"combat";"1996";"10"
-"Last Resort";"shoot'em up";"1992";"10"
-"Magician Lord";"beat'em up";"1990";"10"
-"Metal Slug";"run'n'gun";"1996";"10"
-"Metal Slug 2";"run'n'gun";"1998";"10"
-"Metal Slug 3";"run'n'gun";"2000";"10"
-"Metal Slug 4";"run'n'gun";"2002";"10"
-"Metal Slug 5";"run'n'gun";"2003";"10"
-"Metal Slug X";"run'n'gun";"1999";"10"
-"Mutation Nation";"beat'em up";"1992";"10"
-"Ninja Master's : Haou Ninpou Chou";"combat";"1996";"10"
-"Puzzled";"puzzle";"1990";"10"
-"Real Bout : Fatal Fury";"combat";"1995";"10"
-"Robo Army";"beat'em up";"1991";"10"
-"Samurai Shodown II";"combat";"1994";"10"
-"Samurai Shodown IV : Amakusa s Revenge";"combat";"1996";"10"
-"Samurai Shodown V Special";"combat";"2004";"10"
-"Sengoku 3";"beat'em up";"2003";"10"
-"Shock Troopers";"run'n'gun";"1997";"10"
-"Shock Troopers : 2nd Squad";"run'n'gun";"1998";"10"
-"Super Sidekicks";"sport";"1992";"10"
-"The King of Fighters 2000";"combat";"2000";"10"
-"The King of Fighters 2002";"combat";"2002";"10"
-"The King of Fighters '95";"combat";"1995";"10"
-"The King of Fighters '97";"combat";"1997";"10"
-"The King of Fighters '98";"combat";"1998";"10"
-"The Last Blade 2";"combat";"1997";"10"
-"Top Player's Golf";"sport";"1990";"10"
-"World Heroes Perfect";"combat";"1995";"10"
-"1944: The Loop Master";"shoot'em up";"2000";"7"
-"Alien vs. Predator";"beat'em up";"1994";"7"
-"Armored Warriors";"beat'em up";"1994";"7"
-"Capcom Sports Club";"sport";"1997";"7"
-"Captain Commando";"beat'em up";"1991";"7"
-"Cyberbots: Fullmetal Madness";"combat";"1995";"7"
-"Darkstalkers: The Night Warriors";"combat";"1994";"7"
-"Eco Fighters";"shoot'em up";"1993";"7"
-"Final Fight";"beat'em up";"1989";"7"
-"Ghouls 'n Ghosts";"action";"1988";"7"
-"GigaWing";"shoot'em up";"1999";"7"
-"Mega Man: The Power Battle";"combat";"1995";"7"
-"Progear";"shoot'em up";"2001";"7"
-"Street Fighter II': Hyper Fighting";"combat";"1992";"7"
-"Strider";"action";"1989";"7"
-"Super Puzzle Fighter II Turbo";"puzzle";"1996";"7"
-"Alleykat";"shoot'em up";"1986";"8"
-"Anarchy";"puzzle";"1987";"8"
-"Attack of the Mutant Camels";"shoot'em up";"1983";"8"
-"Avenger";"prg";"1987";"8"
-"Battle Valley";"shoot'em up";"1988";"8"
-"Bear Bovver";"shoot'em up";"1983";"8"
-"Boulder Dash";"plateforme";"1984";"8"
-"Bounder";"puzzle";"1985";"8"
-"California Games";"sport";"1987";"8"
-"Chips Challenge";"puzzle";"1990";"8"
-"Confuzion";"puzzle";"1985";"8"
-"Cosmic Causeway";"puzzle";"1987";"8"
-"Cyberdyne Warrior";"plateforme";"1989";"8"
-"Cybernoid II";"shoot'em up";"1988";"8"
-"Deflektor";"puzzle";"1987";"8"
-"Destroyer";"simulation";"1986";"8"
-"Everyone s a Wally";"aventure";"1985";"8"
-"Firelord";"rpg";"1986";"8"
-"Galencia";"shoot'em up";"2017";"8"
-"Gateway to Apshai";"rpg";"1983";"8"
-"Gribbly s Day Out";"plateforme";"1985";"8"
-"Gridrunner (VIC 20)";"shoot'em up";"1983";"8"
-"Heartland";"plateforme";"1985";"8"
-"Herobotix";"aventure";"1987";"8"
-"Highway Encounter";"shoot'em up";"1986";"8"
-"Hover Bovver";"puzzle";"1983";"8"
-"Impossible Mission";"plateforme";"1983";"8"
-"Impossible Mission II";"plateforme";"1988";"8"
-"IO";"shoot'em up";"1988";"8"
-"Iridis Alpha";"shoot'em up";"1986";"8"
-"Jumpman";"plateforme";"1983";"8"
-"Mega Apocalypse";"shoot'em up";"1987";"8"
-"Mission AD";"plateforme";"1986";"8"
-"Monty Mole";"plateforme";"1984";"8"
-"Monty on the Run";"plateforme";"1985";"8"
-"Nebulus";"plateforme";"1987";"8"
-"Netherworld";"shoot'em up";"1988";"8"
-"Nodes of Yesod";"plateforme";"1985";"8"
-"Paradroid";"shoot'em up";"1985";"8"
-"Pitstop II";"course";"1984";"8"
-"Planet of Death";"aventure";"1984";"8"
-"Psychedelia (VIC 20)";"demo";"1983";"8"
-"Ranarama";"aventure";"1987";"8"
-"Robin of the Wood";"aventure";"1985";"8"
-"Silicon Warrior";"puzzle";"1984";"8"
-"Skate Crazy";"sport";"1988";"8"
-"Speedball 2";"sport";"1991";"8"
-"Spindizzy";"puzzle";"1986";"8"
-"Steel";"shoot'em up";"1989";"8"
-"Street Sports Baseball";"sport";"1985";"8"
-"Street Sports Basketball";"sport";"1987";"8"
-"Summer Games II (inclus Summer Games)";"sport";"1985";"8"
-"Super Cycle";"course";"1986";"8"
-"Sword of Fargoal";"rpg";"1983";"8"
-"Temple of Apshai Trilogy";"rpg";"1985";"8"
-"The Arc of Yesod";"plateforme";"1985";"8"
-"Thing Bounces Back";"plateforme";"1987";"8"
-"Thing on a Spring";"plateforme";"1985";"8"
-"Trailblazer";"puzzle";"1986";"8"
-"Uridium";"shoot'em up";"1986";"8"
-"Who Dares Wins II";"action";"1985";"8"
-"Winter Games";"sport";"1986";"8"
-"World Games";"sport";"1986";"8"
-"Zynaps";"shoot'em up";"1987";"8"
+name;type;releaseYear;miniConsole;description;
+3-D Tic-Tac-Toe;puzzle;1980;6;;
+Adventure;rpg;1979;6;;
+Adventure II;rpg;2005;6;;
+Air-Sea Battle;shoot'em up;1977;6;;
+Aquaventure;shoot'em up;1983;6;;
+Asteroids;shoot'em up;1981;6;;
+Atari Climber;arcade;1987;6;;
+Backgammon;board;1979;6;;
+Barnstorming;course;1982;6;;
+Basketball;sport;1979;6;;
+Beamrider;shoot'em up;1984;6;;
+Black Jack;board;1977;6;;
+Bloody Human Freeway;arcade;1981;6;;
+Bowling;sport;1978;6;;
+Boxing;sport;1980;6;;
+Breakout;arcade;1978;6;;
+Bridge;board;1980;6;;
+Canyon Bomber ;shoot'em up;1978;6;;
+Centipede;arcade;1982;6;;
+Championship Soccer;sport;1980;6;;
+Checkers;board;1980;6;;
+Chopper Command;shoot'em up;1982;6;;
+Circus Atari;arcade;1978;6;;
+Combat Two;shoot'em up;1982;6;;
+Combat;shoot'em up;1978;6;;
+Cosmic Commuter;arcade;1984;6;;
+Crackpots;shoot'em up;1983;6;;
+Crystal Castles;arcade;1984;6;;
+Decathlon;sport;;6;;
+Demons to Diamonds;shoot'em up;1982;6;;
+Desert Falcon;shoot'em up;1987;6;;
+Dodge Em;arcade;1980;6;;
+Dolphin;arcade;1983;6;;
+Double Dunk;sport;1988;6;;
+Dragster;course;1980;6;;
+Enduro;course;1983;6;;
+Fatal Run;course;1989;6;;
+Fishing Derby;arcade;1980;6;;
+Flag Capture;puzzle;1978;6;;
+Football;sport;1988;6;;
+Freeway;arcade;1981;6;;
+Frog Pond;arcade;1982;6;;
+Front Line;arcade;1984;6;;
+Frostbite;arcade;1983;6;;
+Fun with Numbers;education;1977;6;;
+Golf;sport;1978;6;;
+Grand Prix;course;1982;6;;
+Gravitar;shoot'em up;1983;6;;
+H.E.R.O.;action;1984;6;;
+Hangman;board;1978;6;;
+Haunted House;aventure;1981;6;;
+Home Run;sport;1978;6;;
+Human Cannonball;shoot'em up;1978;6;;
+Ice Hockey;sport;1981;6;;
+Indy 500;course;1978;6;;
+Jungle Hunt;arcade;1983;6;;
+Kaboom!;arcade;1981;6;;
+Keystone Kapers;plateforme;1983;6;;
+Laser Blast;shoot'em up;1981;6;;
+Maze Craze;arcade;1978;6;;
+Megamania;shoot'em up;1982;6;;
+Millipede;arcade;1984;6;;
+Miniature Golf;sport;1978;6;;
+Missile Command;arcade;1980;6;;
+MotoRodeo;course;1990;6;;
+Night Driver;course;1980;6;;
+Off The Wall;arcade;1989;6;;
+Oink!;arcade;1983;6;;
+Outlaw;shoot'em up;1979;6;;
+Pitfall II: Lost Caverns;plateforme;1984;6;;
+Pitfall!;plateforme;1983;6;;
+Plaque Attack;shoot'em up;1983;6;;
+Polaris;shoot'em up;1983;6;;
+Pong (Video Olympics);arcade;1977;6;;
+Pressure Cooker;arcade;1983;6;;
+Radar Lock;shoot'em up;1989;6;;
+Realsports Baseball;sport;1982;6;;
+Realsports Basketball;sport;1983;6;;
+Realsports Soccer;sport;1982;6;;
+Realsports Volleyball;sport;1983;6;;
+Return to Haunted;aventure;2005;6;;
+River Raid;shoot'em up;1982;6;;
+River Raid II;shoot'em up;1988;6;;
+Robot Tank;shoot'em up;1983;6;;
+Saboteur;shoot'em up;1983;6;;
+Save Mary;arcade;1989;6;;
+Seaquest;shoot'em up;1983;6;;
+Secret Quest;aventure;1989;6;;
+Skiing;sport;1980;6;;
+Sky Diver;arcade;1978;6;;
+Slot Machine;puzzle;1979;6;;
+Slot Racers;arcade;1978;6;;
+Solaris;simulation;1986;6;;
+Space Invaders;shoot'em up;1980;6;;
+Space War;shoot'em up;1978;6;;
+Spider Fighter;shoot'em up;1982;6;;
+Sprintmaster;course;1988;6;;
+Stampede;action;1981;6;;
+Star Ship;simulation;1977;6;;
+Starmaster;simulation;1982;6;;
+Steeplechase;sport;1980;6;;
+Stellar Track;textuel;1980;6;;
+Street Racer;course;1977;6;;
+Submarine Commander;simulation;1982;6;;
+Super Baseball;sport;;6;;
+Super Breakout;arcade;1978;6;;
+Super Football;sport;1988;6;;
+Surround;arcade;1977;6;;
+Swordquest: Earthworld;rpg;1982;6;;
+Swordquest: Fireworld;rpg;1983;6;;
+Swordquest: Waterworld;rpg;1984;6;;
+Tempest;shoot'em up;1981;6;;
+Tennis;sport;1981;6;;
+Video Checkers;board;1980;6;;
+Video Chess;board;1979;6;;
+Video Pinball;flipper;1978;6;;
+Warlords;action;1981;6;;
+Wizard;aventure;2005;6;;
+Yars  Return;shoot'em up;2005;6;;
+Yars  Revenge;shoot'em up;1981;6;;
+House;aventure;1982;6;;
+Balloon Fight;arcade;1984;11;;
+Bubble Bobble;plateforme;1988;11;;
+Castlevania;action;1986;11;;
+Castlevania II: Simon's Quest;action;1989;11;;
+Donkey Kong;plateforme;1983;11;;
+Donkey Kong Jr.;plateforme;1986;11;;
+Double Dragon II: The Revenge;beat'em up;1989;11;;
+Dr Mario;puzzle;1989;11;;
+Excitebike;course;1984;11;;
+Final Fantasy;rpg;1987;11;;
+Galaga;shoot'em up;1984;11;;
+Ghosts'n Goblins;action;1986;11;;
+Gradius;shoot'em up;1986;11;;
+Ice Climber;arcade;1984;11;;
+Kid Icarus;plateforme;1986;11;;
+Kirby's Adventure;plateforme;1993;11;;
+Mario Bros.;arcade;1986;11;;
+Mega Man 2;action;1988;11;;
+Metroid;plateforme;1986;11;;
+Ninja Gaiden;action;1988;11;;
+Pac-Man;arcade;1984;11;;
+Punch-Out!!;sport;1987;11;;
+StarTropics;rpg;1990;11;;
+Super C;action;1988;11;;
+Super Mario Bros.;plateforme;1983;11;;
+Super Mario Bros. 2;plateforme;1988;11;;
+Super Mario Bros. 3;plateforme;1990;11;;
+Tecmo Bowl;sport;1988;11;;
+The Legend of Zelda;rpg;1987;11;;
+Zelda II: The Adventure of Link;rpg;1988;11;;
+Donkey Kong Country;plateforme;1994;16;;
+EarthBound;rpg;1994;16;;
+Final Fantasy VI (Final Fantasy III);rpg;1994;16;;
+F-Zero;course;1991;16;;
+Kirby's Dream Course;course;1995;16;;
+Kirby's Fun Pak (Kirby Super Star);mini-jeux;1996;16;;
+Mega Man X;action;1994;16;;
+Secret of Mana;rpg;1994;16;;
+Star Fox;shoot'em up;1993;16;;
+Star Fox 2;shoot'em up;2017;16;;
+Street Fighter II': Hyper Fighting;combat;1993;16;;
+Super Castlevania IV;action;1992;16;;
+Super Ghouls'n Ghosts;action;1992;16;;
+Super Mario Kart;course;1992;16;;
+Super Mario RPG: Legend of the Seven Stars;rpg;1996;16;;
+Super Mario World;plateforme;1992;16;;
+Super Mario World 2: Yoshi's Island;plateforme;1995;16;;
+Super Metroid;action;1994;16;;
+Super Probotector: Alien Rebels (Contra III);action;1992;16;;
+Super Punch-Out!!;sport;1994;16;;
+The Legend of Zelda: A Link to the Past;rpg;1992;16;;
+Brawl Brothers;beat'em all;1993;12;Super NES;
+Breath of Fire;rpg;1993;12;Super NES;
+Breath of Fire II;rpg;1994;12;Super NES;
+Demon's Crest;action;1994;12;Super NES;
+Donkey Kong Country;plateforme;1994;12;Super NES;
+Donkey Kong Country 2: Diddy Kong s Quest;plateforme;1995;12;Super NES;
+F-Zero;course;1991;12;Super NES;
+Joe and Mac 3: Lost in the Tropics;plateforme;1994;12;Super NES;
+Kirby's Dream Course;course;1995;12;Super NES;
+Kirby's Dream Land 3;plateforme;1997;12;Super NES;
+Kirby's Fun Pak;mini-jeux;1996;12;Super NES;
+Mario s Super Picross;;1995;12;Super NES;
+Natsume Championship Wrestling ;combat;1994;12;Super NES;
+Pilotwings;simulation;1992;12;Super NES;
+Pop'n TwinBee;shoot'em up;1993;12;Super NES;
+Smash Tennis;sport;1994;12;Super NES;
+Star Fox;shoot'em up;1993;12;Super NES;
+Star Fox 2;shoot'em up;2017;12;Super NES;
+Stunt Race FX;course;1994;12;Super NES;
+Super E.D.F Earth Defence Force;shoot'em up;1991;12;Super NES;
+Super Ghouls'n Ghosts;action;1992;12;Super NES;
+Super Mario Kart;course;1993;12;Super NES;
+Super Mario World;plateforme;1992;12;Super NES;
+Super Mario World 2: Yoshi's Island;plateforme;1995;12;Super NES;
+Super Metroid;action;1994;12;Super NES;
+Super Punch-Out!!;sport;1994;12;Super NES;
+Super Puyo Puyo 2;puzzle;1995;12;Super NES;
+Super Soccer;sport;1992;12;Super NES;
+Super Tennis;sport;1992;12;Super NES;
+The Legend of Zelda: A Link to the Past;rpg;1992;12;Super NES;
+The Peace Keepers;beat'em all;1993;12;Super NES;
+Adventures of Lolo;puzzle;1989;12;NES;
+Adventures of Lolo 2;puzzle;1990;12;NES;
+Balloon Fight;arcade;1984;12;NES;
+Baseball;sport;1983;12;NES;
+Blaster Master (+ Special Version);action;1988;12;NES;
+City Connection;plateforme;1985;12;NES;
+Clu Clu Land;arcade;1984;12;NES;
+Clu Clu Land: Welcome to New Cluclu Land;arcade;1985;12;NES;
+Crystalis;rpg;1990;12;NES;
+Donkey Kong;plateforme;1983;12;NES;
+Donkey Kong 3;plateforme;1983;12;NES;
+Donkey Kong Jr.;plateforme;1986;12;NES;
+Double Dragon;beat'em all;1987;12;NES;
+Double Dragon II: The Revenge;beat'em all;1989;12;NES;
+Dr. Mario  (+ Special Version);puzzle;1990;12;NES;
+Eliminator Boat Duel;action;1991;12;NES;
+Excitebike;course;1985;12;NES;
+Fire Emblem: Ankoku Ry? to Hikari no Tsurugi;rpg;1990;12;NES;
+Ghosts'n Goblins  (+ Special Version);action;1985;12;NES;
+Gradius  (+ Special Version + Second loop);shoot'em up;1986;12;NES;
+Ice Climber;arcade;1985;12;NES;
+Ice Hockey;sport;1988;12;NES;
+Journey to Silius;run'n gun;1990;12;NES;
+Joy Mech Fight;combat;1993;12;NES;
+Kid Icarus  (+ Special Version);plateforme;1986;12;NES;
+Kirby's Adventure  (+ Special Version);plateforme;1993;12;NES;
+Kung-Fu Heroes;action;1986;12;NES;
+Mario and Yoshi;puzzle;1991;12;NES;
+Mario Bros.;arcade;1986;12;NES;
+Metroid  (+ Special Version Mother Brain battle & Ridley battle);action;1987;12;NES;
+Mighty Bomb Jack;arcade;1987;12;NES;
+NES Open Tournament Golf  (+ Special Version);sport;1991;12;NES;
+Ninja Gaiden  (+ Special Version);action;1988;12;NES;
+Pro Wrestling;combat;1986;12;NES;
+Punch-Out!!;sport;1987;12;NES;
+River City Ransom;action;1989;12;NES;
+S.C.A.T.: Special Cybernetic Attack Team;shoot'em up;1990;12;NES;
+Shadow of the Ninja;action;1990;12;NES;
+Soccer;sport;1985;12;NES;
+Solomon's Key;puzzle;1986;12;NES;
+Star Soldier  (+ Special Version);shoot'em up;1986;12;NES;
+StarTropics;action;1990;12;NES;
+Super Dodge Ball;sport;1988;12;NES;
+Super Mario Bros.;plateforme;1983;12;NES;
+Super Mario Bros. 2;plateforme;1988;12;NES;
+Super Mario Bros. 3;plateforme;1990;12;NES;
+Super Mario Bros.: The Lost Levels;plateforme;1986;12;NES;
+Tecmo Bowl;sport;1988;12;NES;
+Tennis;sport;1984;12;NES;
+The Immortal;rpg;1990;12;NES;
+The Legend of Zelda  (+ Special Version);rpg;1987;12;NES;
+Tsuppari Oozumou;combat;1987;12;NES;
+TwinBee  (+ Special Version);shoot'em up;1986;12;NES;
+Vice: Project Doom;action;1991;12;NES;
+Volleyball;sport;1986;12;NES;
+Vs. Excitebike;course;1988;12;NES;
+Wario's Woods;puzzle;1994;12;NES;
+Wrecking Crew;arcade;1985;12;NES;
+Yie Ar Kung-Fu;combat;1985;12;NES;
+Zelda II: The Adventure of Link;rpg;1988;12;NES;
+Alex Kidd in the Enchanted Castle;plateforme;1989;9;;
+Alien Storm ;beat'em up;1991;9;;
+Altered Beast ;beat'em up;1989;9;;
+Arrow Flash ;shoot'em up;1990;9;;
+Bonanza Bros. ;plateforme;1991;9;;
+Chakan : The Forever Man ;action;1992;9;;
+Columns III ;puzzle;1994;9;;
+Columns ;puzzle;1990;9;;
+Comix Zone ;action;1995;9;;
+Crack Down ;arcade;1990;9;;
+Decap Attack ;plateforme;1991;9;;
+Dr. Robotnik's Mean Bean Machine ;puzzle;1993;9;;
+E-SWAT : City Under Siege ;action;1990;9;;
+Eternal Champions ;combat;1993;9;;
+Fatal Labyrinth ;rpg;1990;9;;
+Flicky ;arcade;1990;9;;
+Gain Ground ;action;1991;9;;
+Golden Axe II ;beat'em up;1989;9;;
+Golden Axe III ;beat'em up;1991;9;;
+Golden Axe ;beat'em up;1993;9;;
+Jewel Master ;plateforme;1991;9;;
+Kid Chameleon ;plateforme;1992;9;;
+Mortal Kombat 3 ;combat;1995;9;;
+Mortal Kombat II ;combat;1994;9;;
+Mortal Kombat ;combat;1992;9;;
+Phantasy Star II ;rpg;1989;9;;
+Phantasy Star III : Generations of Doom ;rpg;1991;9;;
+Phantasy Star IV ;rpg;1994;9;;
+Ristar ;plateforme;1995;9;;
+Shadow Dancer : The Secret of Shinobi ;action;1990;9;;
+Shining Force: The Legacy of Great Intention ;rpg;1993;9;;
+Shining Force II: The Ancient Seal ;rpg;1994;9;;
+Shining in the Darkness ;rpg;1991;9;;
+Shinobi III : Return of the Ninja Master ;action;1993;9;;
+Sonic & Knuckles ;plateforme;1994;9;;
+Sonic 3D Blast ;plateforme;1996;9;;
+Sonic Spinball ;flipper;1993;9;;
+Sonic the Hedgehog 2 ;plateforme;1992;9;;
+Sonic the Hedgehog ;plateforme;1991;9;;
+Super Thunder Blade ;shoot'em up;1989;9;;
+Sword of Vermilion;rpg;1990;9;;
+the Ooze;action;1995;9;;
+Vectorman 2 ;action;1995;9;;
+Vectorman ;action;1996;9;;
+Virtua Fighter 2 ;combat;1997;9;;
+Alex Kidd in High Tech World;plateforme;1989;9;;
+Alex Kidd in Miracle World;plateforme;1987;9;;
+Alex Kidd: The Lost Stars;plateforme;1988;9;;
+Assault City ;arcade;1990;9;;
+Astro Warrior ;shoot'em up;1986;9;;
+Baku Baku Animal;puzzle;1995;9;;
+Dragon Crystal;rpg;1990;9;;
+Fantasy Zone;shoot'em up;1986;9;;
+Fantasy Zone : The Maze;shoot'em up;1987;9;;
+Kenseiden ;action;1988;9;;
+Kung Fu Kid ;action;1987;9;;
+Phantasy Star;rpg;1988;9;;
+Psycho Fox ;plateforme;1989;9;;
+Sonic Chaos;plateforme;1993;9;;
+the Ninja ;action;1986;9;;
+Sonic Drift 2;course;1995;9;;
+Sonic Triple Trouble;plateforme;1994;9;;
+Tails Adventure;plateforme;1995;9;;
+Adventure in the park ;arcade;0;9;;
+Air Hockey ;arcade;0;9;;
+Bomber;arcade;0;9;;
+Bubbles Master ;arcade;0;9;;
+Cannon ;rpg;0;9;;
+Checker ;board;0;9;;
+Cross the Road ;course;0;9;;
+Curling 2010 ;sport;0;9;;
+Defenders of Oasis ;rpg;0;9;;
+Fight or Lose ;board;0;9;;
+Hexagonos ;puzzle;0;9;;
+Jack's Pea ;arcade;0;9;;
+Jewel Magic ;puzzle;0;9;;
+Memory ;puzzle;0;9;;
+Mr. Balls ;puzzle;0;9;;
+Naval Power ;simulation;0;9;;
+Plumbing Contest ;puzzle;0;9;;
+Snail Maze ;arcade;0;9;;
+Snake;arcade;0;9;;
+Spider ;arcade;0;9;;
+Super Columns ;puzzle;0;9;;
+Wall-Breaking;arcade;0;9;;
+Alex Kidd in the Enchanted Castle;plateforme;1989;15;;
+Alisia Dragoon;action;1992;15;;
+Altered Beast;beat'em up;1989;15;;
+Castle of Illusion Starring Mickey Mouse;plateforme;1990;15;;
+Castlevania: The New Generation;action;1994;15;;
+Columns;puzzle;1990;15;;
+Comix Zone;action;1995;15;;
+Darius;shoot'em up;1990;15;;
+Dr. Robotnik's Mean Bean Machine;puzzle;1993;15;;
+Dynamite Headdy;plateforme;1994;15;;
+Earthworm Jim;plateforme;1994;15;;
+Ecco the Dolphin;aventure;1992;15;;
+Eternal Champions;combat;1993;15;;
+Ghouls 'n Ghosts;plateforme;1989;15;;
+Golden Axe;beat'em up;1989;15;;
+Gunstar Heroes;run'n gun;1993;15;;
+Kid Chameleon;plateforme;1992;15;;
+Landstalker;rpg;1993;15;;
+Light Crusader;rpg;1995;15;;
+Mega Man: The Wily Wars;action;1994;15;;
+Monster World IV;action;1994;15;;
+Phantasy Star IV: The End of the Millennium;rpg;1994;15;;
+Probotector;action;1994;15;;
+Road Rash II;course;1991;15;;
+Shining Force;rpg;1993;15;;
+Shinobi III;action;1993;15;;
+Sonic The Hedgehog;plateforme;1991;15;;
+Sonic The Hedgehog 2;plateforme;1992;15;;
+Sonic Spinball;flipper;1993;15;;
+Space Harrier 2;shoot'em up;1989;15;;
+Street Fighter II' : Special Champion Edition;combat;1993;15;;
+Streets of Rage 2;beat'em up;1992;15;;
+Strider;action;1990;15;;
+Super Fantasy Zone;shoot'em up;1992;15;;
+Tetris;puzzle;2006;15;;
+The Story of Thor;rpg;1994;15;;
+Thunder Force III;shoot'em up;1990;15;;
+ToeJam & Earl;plateforme;1991;15;;
+Vectorman;action;1995;15;;
+Virtua Fighter 2;combat;1997;15;;
+Wonder Boy in Monster World;plateforme;1991;15;;
+World of Illusion Starring Mickey Mouse & Donald Duck;plateforme;1992;15;;
+Air Zonk;shoot'em up;1992;13;;
+Akumaj? Dracula X Chi no Rondo (Castlevania);action;1993;13;;
+Aldynes;shoot'em up;1991;13;;
+Alien Crush;flipper;1988;13;;
+Appare! Gateball;sport;1988;13;;
+Blazing Lazers (Gunhed);shoot'em up;1989;13;;
+Bomberman  93;mini-jeux;1992;13;;
+Bomberman  94;mini-jeux;1993;13;;
+Bomberman Panic Bomber;mini-jeux;1994;13;;
+Bonk s Revenge;plateforme;1989;13;;
+Bonk's Adventure;plateforme;1991;13;;
+Cadash;rpg;1989;13;;
+Chew-Man-Fu;arcade;1990;13;;
+Ch? Aniki;shoot'em up;1992;13;;
+Daimakaimura (Ghouls'n Ghosts);plateforme;1990;13;;
+Dragon Spirit;shoot'em up;1989;13;;
+Dungeon Explorer;rpg;1989;13;;
+Fantasy Zone;shoot'em up;1988;13;;
+Galaga  88;shoot'em up;1988;13;;
+Ginga Fukei Densetsu Sapphire;shoot'em up;1995;13;;
+Gradius;shoot'em up;1991;13;;
+Gradius II   Gofer no Yab?  ;shoot'em up;1992;13;;
+J.J. & Jeff;plateforme;1990;13;;
+Jaseiken Necromancer;rpg;1988;13;;
+Lords of Thunder;shoot'em up;1993;13;;
+Military Madness;strategie ;1990;13;;
+Moto Roader;course;1989;13;;
+Nectaris;strategie ;1989;13;;
+Neutopia;rpg;1989;13;;
+Neutopia II;rpg;1991;13;;
+New Adventure Island;plateforme;1992;13;;
+Ninja Ry?kenden (Ninja Gaiden);action;1992;13;;
+Ninja Spirit;action;1990;13;;
+Parasol Stars;arcade;1991;13;;
+Power Golf;sport;1989;13;;
+Psychosis;shoot'em up;1990;13;;
+R-Type;shoot'em up;1989;13;;
+Salamander;shoot'em up;1991;13;;
+Seirei Senshi Spriggan;shoot'em up;1991;13;;
+Snatcher;aventure;1992;13;;
+Soldier Blade;shoot'em up;1992;13;;
+Space Harrier;shoot'em up;1990;13;;
+Splatterhouse;beat'em up;1990;13;;
+Spriggan Mark 2;shoot'em up;1992;13;;
+Star Parodier;shoot'em up;1992;13;;
+Super Darius;shoot'em up;1990;13;;
+Super Momotar? Dentetsu II;mini-jeux;1988;13;;
+Super Star Soldier;shoot'em up;1990;13;;
+The Genji and the Heike Clans;beat'em up;1990;13;;
+The Kung Fu (China Warrior);combat;1987;13;;
+The Legend of Valkyrie;action;1989;13;;
+Victory Run;course;1989;13;;
+Ys book I & II;rpg;1989;13;;
+Battle Arena Toshinden;combat;1995;14;;
+Cool Boarders 2;sport;1997;14;;
+Destruction Derby;course;1995;14;;
+Final Fantasy VII;rpg;1997;14;;
+Grand Theft Auto;action;1997;14;;
+Intelligent Qube;puzzle;1997;14;;
+Jumping Flash;fps;1995;14;;
+Metal Gear Solid;infiltration;1998;14;;
+Mr Driller;puzzle;1999;14;;
+Oddworld: Abe s Oddysee;plateforme;1997;14;;
+Rayman;plateforme;1995;14;;
+Resident Evil Director s Cut;survie;1996;14;;
+Revelations: Persona;rpg;1996;14;;
+Ridge Racer Type 4;course;1999;14;;
+Super Puzzle Fighter II Turbo;puzzle;1996;14;;
+Syphon Filter;infiltration;1999;14;;
+Tekken 3;combat;1997;14;;
+Tom Clancy s Rainbow 6;fps;1998;14;;
+Twisted Metal;action;1995;14;;
+Wild Arms;rpg;1996;14;;
+3 Count Bout;combat;1993;10;;
+Art of Fighting;combat;1994;10;;
+Blazing Star;shoot'em up;1998;10;;
+Blue s Journey;shoot'em up;1991;10;;
+Crossed Swords;beat'em up;1991;10;;
+Fatal Fury Special;combat;1993;10;;
+Foot Ball Frenzy;sport;1992;10;;
+Garou : Mark of the Wolves;combat;1999;10;;
+Ghost Pilots;shoot'em up;1991;10;;
+King of the Monsters;beat'em up;1991;10;;
+King of the Monsters 2;beat'em up;1992;10;;
+Kizuna Encounter : Super Tag Battle;combat;1996;10;;
+Last Resort;shoot'em up;1992;10;;
+Magician Lord;beat'em up;1990;10;;
+Metal Slug;run'n'gun;1996;10;;
+Metal Slug 2;run'n'gun;1998;10;;
+Metal Slug 3;run'n'gun;2000;10;;
+Metal Slug 4;run'n'gun;2002;10;;
+Metal Slug 5;run'n'gun;2003;10;;
+Metal Slug X;run'n'gun;1999;10;;
+Mutation Nation;beat'em up;1992;10;;
+Ninja Master's : Haou Ninpou Chou;combat;1996;10;;
+Puzzled;puzzle;1990;10;;
+Real Bout : Fatal Fury;combat;1995;10;;
+Robo Army;beat'em up;1991;10;;
+Samurai Shodown II;combat;1994;10;;
+Samurai Shodown IV : Amakusa s Revenge;combat;1996;10;;
+Samurai Shodown V Special;combat;2004;10;;
+Sengoku 3;beat'em up;2003;10;;
+Shock Troopers;run'n'gun;1997;10;;
+Shock Troopers : 2nd Squad;run'n'gun;1998;10;;
+Super Sidekicks;sport;1992;10;;
+The King of Fighters 2000;combat;2000;10;;
+The King of Fighters 2002;combat;2002;10;;
+The King of Fighters '95;combat;1995;10;;
+The King of Fighters '97;combat;1997;10;;
+The King of Fighters '98;combat;1998;10;;
+The Last Blade 2;combat;1997;10;;
+Top Player's Golf;sport;1990;10;;
+World Heroes Perfect;combat;1995;10;;
+1944: The Loop Master;shoot'em up;2000;7;;
+Alien vs. Predator;beat'em up;1994;7;;
+Armored Warriors;beat'em up;1994;7;;
+Capcom Sports Club;sport;1997;7;;
+Captain Commando;beat'em up;1991;7;;
+Cyberbots: Fullmetal Madness;combat;1995;7;;
+Darkstalkers: The Night Warriors;combat;1994;7;;
+Eco Fighters;shoot'em up;1993;7;;
+Final Fight;beat'em up;1989;7;;
+Ghouls 'n Ghosts;action;1988;7;;
+GigaWing;shoot'em up;1999;7;;
+Mega Man: The Power Battle;combat;1995;7;;
+Progear;shoot'em up;2001;7;;
+Street Fighter II': Hyper Fighting;combat;1992;7;;
+Strider;action;1989;7;;
+Super Puzzle Fighter II Turbo;puzzle;1996;7;;
+Alleykat;shoot'em up;1986;8;;
+Anarchy;puzzle;1987;8;;
+Attack of the Mutant Camels;shoot'em up;1983;8;;
+Avenger;prg;1987;8;;
+Battle Valley;shoot'em up;1988;8;;
+Bear Bovver;shoot'em up;1983;8;;
+Boulder Dash;plateforme;1984;8;;
+Bounder;puzzle;1985;8;;
+California Games;sport;1987;8;;
+Chips Challenge;puzzle;1990;8;;
+Confuzion;puzzle;1985;8;;
+Cosmic Causeway;puzzle;1987;8;;
+Cyberdyne Warrior;plateforme;1989;8;;
+Cybernoid II;shoot'em up;1988;8;;
+Deflektor;puzzle;1987;8;;
+Destroyer;simulation;1986;8;;
+Everyone s a Wally;aventure;1985;8;;
+Firelord;rpg;1986;8;;
+Galencia;shoot'em up;2017;8;;
+Gateway to Apshai;rpg;1983;8;;
+Gribbly s Day Out;plateforme;1985;8;;
+Gridrunner (VIC 20);shoot'em up;1983;8;;
+Heartland;plateforme;1985;8;;
+Herobotix;aventure;1987;8;;
+Highway Encounter;shoot'em up;1986;8;;
+Hover Bovver;puzzle;1983;8;;
+Impossible Mission;plateforme;1983;8;;
+Impossible Mission II;plateforme;1988;8;;
+IO;shoot'em up;1988;8;;
+Iridis Alpha;shoot'em up;1986;8;;
+Jumpman;plateforme;1983;8;;
+Mega Apocalypse;shoot'em up;1987;8;;
+Mission AD;plateforme;1986;8;;
+Monty Mole;plateforme;1984;8;;
+Monty on the Run;plateforme;1985;8;;
+Nebulus;plateforme;1987;8;;
+Netherworld;shoot'em up;1988;8;;
+Nodes of Yesod;plateforme;1985;8;;
+Paradroid;shoot'em up;1985;8;;
+Pitstop II;course;1984;8;;
+Planet of Death;aventure;1984;8;;
+Psychedelia (VIC 20);demo;1983;8;;
+Ranarama;aventure;1987;8;;
+Robin of the Wood;aventure;1985;8;;
+Silicon Warrior;puzzle;1984;8;;
+Skate Crazy;sport;1988;8;;
+Speedball 2;sport;1991;8;;
+Spindizzy;puzzle;1986;8;;
+Steel;shoot'em up;1989;8;;
+Street Sports Baseball;sport;1985;8;;
+Street Sports Basketball;sport;1987;8;;
+Summer Games II (inclus Summer Games);sport;1985;8;;
+Super Cycle;course;1986;8;;
+Sword of Fargoal;rpg;1983;8;;
+Temple of Apshai Trilogy;rpg;1985;8;;
+The Arc of Yesod;plateforme;1985;8;;
+Thing Bounces Back;plateforme;1987;8;;
+Thing on a Spring;plateforme;1985;8;;
+Trailblazer;puzzle;1986;8;;
+Uridium;shoot'em up;1986;8;;
+Who Dares Wins II;action;1985;8;;
+Winter Games;sport;1986;8;;
+World Games;sport;1986;8;;
+Zynaps;shoot'em up;1987;8;;

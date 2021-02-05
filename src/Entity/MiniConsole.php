@@ -31,6 +31,7 @@ class MiniConsole extends Article
 
     /**
      * @ORM\OneToMany(targetEntity=Games::class, mappedBy="emulatedOn")
+     * @ORM\OrderBy({"name" = "ASC"})
      */
     private $games;
 
