@@ -1,6 +1,6 @@
 index:
    path: /
    controller: App\Controller\RetroboxController::index
-registration :
+security_registration :
     path: /registration
     controller: App\Controller\SecurityController::registration

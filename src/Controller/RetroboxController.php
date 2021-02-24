@@ -152,22 +152,9 @@ class RetroboxController extends AbstractController
         
     }
 
-    /**
-     * @Route("/registration", priority=10 , name="security_registration")
-     */
-    public function registration(){
-        $user = new User;
-        $form = $this->createForm(RegistrationType::class, $user);
-
-        return $this->render('security/registration.html.twig', [
-            'form' => $form->createView()
-        ]);
-
-    }
-
 
     /**
-     * @Route("/{title<#^DIY#>}", name= "article")
+     * @Route("/{title}", name= "article", requirements={"title"="^DIY"})
      */
 
     public function displayArticle($title, Request $request, Article $article, EntityManagerInterface $manager)

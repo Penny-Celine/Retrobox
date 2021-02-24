@@ -18,7 +18,7 @@ use App\Form\RegistrationType;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/registration", priority=10 , name="security_registration")
+     *@Route("/registration", priority=10 , name="security_registration")
      */
     public function registration(){
         $user = new User;
