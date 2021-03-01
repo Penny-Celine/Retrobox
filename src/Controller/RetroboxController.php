@@ -154,7 +154,7 @@ class RetroboxController extends AbstractController
 
 
     /**
-     * @Route("/{title}", name= "article", requirements={"title"="^DIY"})
+     * @Route("/Article/{title}", name= "article")
      */
 
     public function displayArticle($title, Request $request, Article $article, EntityManagerInterface $manager)
