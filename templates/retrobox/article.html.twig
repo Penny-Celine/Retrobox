@@ -30,16 +30,22 @@ A partir de cette alliance, on obtient la possibilité de jouer à la Super Nint
     <div class="row">
         <h3>Commentaires</h3>
 
+        <h4>{{ message }}</h4>
+
         {% for comment in article.comments %}
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">{{comment.author}}</h5>
-                    <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
-                        {{ comment.content | raw }}
-                    </p>
-                    <button type="submit" class="btn btn-warning btn-report">Signaler</button>
+            {% if comment.isReported == 'false' %}
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{comment.author}}</h5>
+                        <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
+                            {{ comment.content | raw }}
+                        </p>
+                        <form action="" method="post">
+                            <button type="submit" name="report" value="{{comment.id}}" class="btn btn-warning btn-report">Signaler</button>
+                        </form>
+                    </div>
                 </div>
-            </div>    
+            {% endif %}
         {% endfor %}
     </div>
 

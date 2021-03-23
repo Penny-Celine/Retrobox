@@ -1,20 +1,48 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SecurityController!{% endblock %}
+{% block title %}Administration{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    {% if app.user and app.user.roles == ['ROLE_ADMIN'] %}
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <h3>Salut Admin !</h3>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <h4>Voici les commentaires à modérer :</h4>
+            </div>
+        </div>
+        <div class="row">
+    
+            {% for comment in rComments %}
+                <div class="col-lg-4 col-md-6">
+                    <form action="" method="post">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+                        <h5>{{comment.author}}</h5><br/>
+                        <p>
+                            Ecrit le {{ comment.createdAt |  date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
+                            Contenu : <br/>
+                            <textarea name="comment-content">{{ comment.content| raw }}</textarea><br/>
+                            Relié à l'article : {{ comment.relatedTo.title}}<br/>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" name="modify" value="{{ comment.id }}" class="btn btn-primary">Enregistrer</button>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" name="delete" value="{{ comment.id }}" class="btn btn-warning">Supprimer</button>
+                            </div>
+                        </div>
+                    </form>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/dev-mpx2/P5/src/Controller/SecurityController.php'|file_link(0) }}">src/Controller/SecurityController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/dev-mpx2/P5/templates/security/index.html.twig'|file_link(0) }}">templates/security/index.html.twig</a></code></li>
-    </ul>
-</div>
+                </div>
+            {% endfor %}
+    
+        </div>
+
+    {% else %}
+        <div class="row">
+            <p>Vous n'avez rien à faire ici !</p>
+        </div>
+    {% endif %}
 {% endblock %}

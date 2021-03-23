@@ -4,40 +4,73 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
- * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ORM\Table(name="app_users")
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity(
+ *  fields={"email", "userName"},
+ *  message="Cette adresse est déjà enregistrée !"
+ * )
  */
-class User
+class User implements UserInterface, \Serializable
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
+     * @Assert\Email
      */
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      */
-    private $role;
+    private $userName;
 
     /**
      * @ORM\Column(type="string", length=255)
-     */
-    private $pseudo;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min=8, minMessage="Votre mot de passe doit être de minimum 8 caractères")
      */
     private $password;
 
+    /**
+     * @Assert\EqualTo(propertyPath="password", message="Vous n'avez pas confirmé votre mot de passe")
+    */
     public $confirm_password;
+
+    /**
+     * @ORM\Column(name="is_active", type="boolean")
+     */
+    private $isActive;
+
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = array();
+
+    public function __construct()
+    {
+        $this->isActive = true;
+        // may not be needed, see section on salt below
+        // $this->salt = md5(uniqid('', true));
+    }
+
+    public function getSalt()
+    {
+        // you *may* need a real salt depending on your encoder
+        // see section on salt below
+        return null;
+    }
+
 
     public function getId(): ?int
     {
@@ -56,26 +89,15 @@ class User
         return $this;
     }
 
-    public function getRole(): ?string
+
+    public function getUserName(): ?string
     {
-        return $this->role;
+        return $this->userName;
     }
 
-    public function setRole(string $role): self
+    public function setUserName(string $userName): self
     {
-        $this->role = $role;
-
-        return $this;
-    }
-
-    public function getPseudo(): ?string
-    {
-        return $this->pseudo;
-    }
-
-    public function setPseudo(string $pseudo): self
-    {
-        $this->pseudo = $pseudo;
+        $this->userName = $userName;
 
         return $this;
     }
@@ -104,4 +126,43 @@ class User
         return $this;
     }
 
+    public function getRoles(): array
+    {
+        return $this->roles;
+
+    }
+
+    public function setRoles(array $roles) : self
+    {
+        $this->roles = $roles;
+        return $this;  
+    }
+
+    public function eraseCredentials()
+    {
+    }
+
+    /** @see \Serializable::serialize() */
+    public function serialize()
+    {
+        return serialize(array(
+            $this->id,
+            $this->userName,
+            $this->password,
+            // see section on salt below
+            // $this->salt,
+        ));
+    }
+
+    /** @see \Serializable::unserialize() */
+    public function unserialize($serialized)
+    {
+        list (
+            $this->id,
+            $this->userName,
+            $this->password,
+            // see section on salt below
+            // $this->salt
+        ) = unserialize($serialized, array('allowed_classes' => false));
+    }
 }

@@ -18,6 +18,7 @@ use App\Entity\Comment;
 use App\Form\CommentType;
 use App\Repository\ArticleRepository;
 use App\Repository\MiniConsoleRepository;
+use App\Repository\CommentRepository;
 
 class RetroboxController extends AbstractController
 {
@@ -54,7 +55,7 @@ class RetroboxController extends AbstractController
      * @Route("/mini-consoles/{title}", name= "one-mini")
      */
 
-    public function displayAMachine($title, MiniConsole $miniConsole, Request $request, EntityManagerInterface $manager)
+    public function displayAMachine($title, MiniConsole $miniConsole, Request $request, EntityManagerInterface $manager, CommentRepository $commentrepo)
     {
 
         $comments = $miniConsole->getComments();
@@ -75,10 +76,25 @@ class RetroboxController extends AbstractController
             return $this->redirectToRoute('one-mini', ['title' => $title]);
     
         }
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['report']))
+        {
+            $reportedComment = $commentrepo->findOneById($_POST['report']);
+            $reportedComment->setIsReported('true');
+            $manager->persist($reportedComment);
+            $manager->flush();
+
+            return $this->render('retrobox/display-one.html.twig', [
+                'miniConsole' => $miniConsole,
+                'formComment' => $formComment->createView(),
+                'message' => 'Le commentaire a bien été signalé.'
+            ]);
+        }
         
         return $this->render('retrobox/display-one.html.twig', [
             'miniConsole' => $miniConsole,
-            'formComment' => $formComment->createView()
+            'formComment' => $formComment->createView(),
+            'message' => ''
         ]);
         
 
@@ -178,10 +194,24 @@ class RetroboxController extends AbstractController
             return $this->redirectToRoute('article', ['title' => $title]);
 
         }
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['report']))
+        {
+            $reportedComment = $commentrepo->findOneById($_POST['report']);
+            $reportedComment->setIsReported('true');
+            $manager->persist($reportedComment);
+            $manager->flush();
+
+            return $this->render('retrobox/article.html.twig', [
+                'article' => $article,
+                'formComment' => $formComment->createView(),
+                'message' => 'Le commentaire a bien été signalé.'
+            ]);
+        }
 
         return $this->render('retrobox/article.html.twig', [
             'article' => $article,
-            'formComment' => $formComment->createView()
+            'formComment' => $formComment->createView(),
+            'message' => ''
         
         ]);
     }

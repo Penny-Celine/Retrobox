@@ -8,7 +8,7 @@
 
 body
 {
-    background-color: #2B3E50;
+    background: linear-gradient(0.25turn, #2B3E50, #000, #2B3E50);
 }
 
 .card
@@ -17,6 +17,28 @@ body
     margin: 15px;
 }
 
+.navbar
+{
+    background-image: url("../images/cubes.jpg");
+    background-size: contain;
+    font-weight: bold;
+}
+.nav-item
+{
+    background-color: #DF691A;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-shadow : 1px 1px #000;
+}
+.navbar-brand
+{
+    text-shadow : 2px 2px #000;
+}
+.nav-link
+{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
 
 .dropdown-toggle:active > .dropdown-menu
 {

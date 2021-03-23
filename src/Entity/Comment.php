@@ -41,7 +41,7 @@ class Comment
     private $isReported;
 
     /**
-     * @ORM\ManyToOne(targetEntity=article::class, inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity=Article::class, inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
      */
     private $relatedTo;
