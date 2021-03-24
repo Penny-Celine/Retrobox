@@ -28,25 +28,30 @@ A partir de cette alliance, on obtient la possibilité de jouer à la Super Nint
     </div>
 
     <div class="row">
-        <h3>Commentaires</h3>
+        <div class="col-lg-12 col-md-12">
+            <h3>Commentaires</h3>
+        </div>
+        <div class="col-lg-12 col-md-12">
+            <h4>{{ message }}</h4>
+        </div>
+        <div class="row">
 
-        <h4>{{ message }}</h4>
-
-        {% for comment in article.comments %}
-            {% if comment.isReported == 'false' %}
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">{{comment.author}}</h5>
-                        <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
-                            {{ comment.content | raw }}
-                        </p>
-                        <form action="" method="post">
-                            <button type="submit" name="report" value="{{comment.id}}" class="btn btn-warning btn-report">Signaler</button>
-                        </form>
+            {% for comment in article.comments %}
+                {% if comment.isReported == false %}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{comment.author}}</h5>
+                            <p class="card-text">Écrit le {{comment.createdAt  | date('d/m/Y')}} à {{comment.createdAt | date('H:i')}}<br/>
+                                {{ comment.content | raw }}
+                            </p>
+                            <form action="" method="post">
+                                <button type="submit" name="report" value="{{comment.id}}" class="btn btn-warning btn-report">Signaler</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            {% endif %}
-        {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 
     <div class="row">

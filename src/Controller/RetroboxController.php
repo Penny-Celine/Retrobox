@@ -123,8 +123,8 @@ class RetroboxController extends AbstractController
             $content = $data ['message'];
 
             $confirm = (new \Swift_Message('Feedback Email'))
-                    ->setFrom('retrobox.game@gmail.com')
-                    ->setTo('retrobox.game@gmail.com')
+                    ->setFrom('contact@r3trobox.fr')
+                    ->setTo('contact@r3trobox.fr')
                     ->setBody(
                         $this->renderView(
                             // templates/contact.html.twig
@@ -139,7 +139,7 @@ class RetroboxController extends AbstractController
             $mailer->send($confirm);
 
             $message = (new \Swift_Message('Confirmation Email'))
-                    ->setFrom('retrobox.game@gmail.com')
+                    ->setFrom('contact@r3trobox.fr')
                     ->setTo($email)
                     ->setBody(
                         $this->renderView(
@@ -173,7 +173,7 @@ class RetroboxController extends AbstractController
      * @Route("/Article/{title}", name= "article")
      */
 
-    public function displayArticle($title, Request $request, Article $article, EntityManagerInterface $manager)
+    public function displayArticle($title, Request $request, Article $article, EntityManagerInterface $manager, CommentRepository $commentRepo)
     {
 
         $comments = $article->getComments();
@@ -196,13 +196,14 @@ class RetroboxController extends AbstractController
         }
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['report']))
         {
-            $reportedComment = $commentrepo->findOneById($_POST['report']);
+            $reportedComment = $commentRepo->findOneById($_POST['report']);
             $reportedComment->setIsReported('true');
             $manager->persist($reportedComment);
             $manager->flush();
 
             return $this->render('retrobox/article.html.twig', [
                 'article' => $article,
+                'comments' => $comments,
                 'formComment' => $formComment->createView(),
                 'message' => 'Le commentaire a bien été signalé.'
             ]);
@@ -210,6 +211,7 @@ class RetroboxController extends AbstractController
 
         return $this->render('retrobox/article.html.twig', [
             'article' => $article,
+            'comments' => $comments,
             'formComment' => $formComment->createView(),
             'message' => ''
         

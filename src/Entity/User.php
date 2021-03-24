@@ -53,7 +53,7 @@ class User implements UserInterface, \Serializable
     private $isActive;
 
     /**
-     * @ORM\Column(type="varchar")
+     * @ORM\Column(type="string", length=190)
      */
     private $roles = array();
 
@@ -128,13 +128,13 @@ class User implements UserInterface, \Serializable
 
     public function getRoles(): array
     {
-        return $this->roles;
+        return array($this->roles);
 
     }
 
     public function setRoles(array $roles) : self
     {
-        $this->roles = $roles;
+        $this->roles = implode($roles, );
         return $this;  
     }
 
