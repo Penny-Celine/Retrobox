@@ -25,6 +25,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
 {
@@ -62,17 +63,7 @@ class SecurityController extends AbstractController
 
     }
 
-    /**
-     * @Route("/login", priority=9 , name="security_login")
-     */
-    public function login(){
-        return $this->render('security/login.html.twig');
-    }
 
-    /**
-     * @Route("/logout", name="security_logout")
-     */
-    public function logout(){}
 
     /**
      * @Route("/admin", name="security_home")
@@ -111,5 +102,28 @@ class SecurityController extends AbstractController
             'rComments' => $rComments
         ]);
     }
+
+    /**
+     * @Route("/login", name="app_login")
+     */
+    public function login(AuthenticationUtils $authenticationUtils): Response
+    {
+        // if ($this->getUser()) {
+        //     return $this->redirectToRoute('target_path');
+        // }
+
+        // get the login error if there is one
+        $error = $authenticationUtils->getLastAuthenticationError();
+        // last username entered by the user
+        $lastUsername = $authenticationUtils->getLastUsername();
+
+        return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
+    }
+
+    /**
+     * @Route("/logout", name="app_logout")
+     */
+    public function logout(){}
+
 
 }

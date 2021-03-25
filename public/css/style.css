@@ -32,10 +32,12 @@ body
 }
 .navbar-brand
 {
+    font-size: 1.8rem;
     text-shadow : 2px 2px #000;
 }
 .nav-link
 {
+    font-size: larger;
     padding-top: 0!important;
     padding-bottom: 0!important;
 }
@@ -78,7 +80,7 @@ body
 #home-text
 {
     font-size: 1.1em;
-    display : none;
+
 }
 
 #intro
@@ -137,6 +139,26 @@ blockquote
 blockquote span
 {
    float: right;
+}
+
+.btn
+{
+    margin-bottom: 25px;
+}
+.btn-success
+{
+    background-color: #00FE00;
+    color: black;
+}
+
+footer
+{
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    background-image: url("../images/cubes.jpg");
+    background-size: 400px;
+    background-repeat: repeat;
+    border: solid 2px black;
 }
 
 

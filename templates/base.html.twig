@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 		<meta name= "description" content= "Blog de rétro-gaming francophone où on vous présente les mini-consoles sorties ces dernières années ainsi que la solution Recalbox" />
         <meta name="author" content="Céline Maupoux" />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:title" content="R3trobox.fr"/>
+        <meta property="og:image" content="images/favicon.ico"/>
+        <meta property="og:site_name" content="R3trobox"/>
+        <meta property="og:description" content="Site de rétro-gaming francophone pour les débutants et/ou petits budgets"/>
+
         <link rel="icon" type="image/ico" href="images/favicon.ico">
 
         <title>{% block title %}Retrobox.fr blog de retro-gaming{% endblock %}</title>
@@ -16,7 +23,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/">Retrobox.fr</a>
+            <a class="navbar-brand" href="/">R3trobox.fr</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,24 +51,22 @@
 
                     {% if not app.user %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('security_login') }}">Se Connecter</a>
+                            <a class="nav-link" href="{{ path('app_login') }}">Se Connecter</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ path('security_registration') }}" class="nav-link">S'inscrire</a>
                         </li>
                     {% else %}
-                        {% if app.user.roles == ['ROLE_ADMIN']%}
+                        {% if app.user.roles[0] == 'ROLE_ADMIN'%}
                             <li class="nav-item">
                                 <a href="{{ path('security_home') }}" class="nav-link">Modération</a>
                             </li>
                         {% endif %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('security_logout') }}">Se Déconnecter</a>
+                            <a class="nav-link" href="{{ path('app_logout') }}">Se Déconnecter</a> 
                         </li>
                     {% endif %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('legal') }}">Mentions légales</a>
-                    </li>
+
                 </ul>
 
             </div>
@@ -70,6 +75,49 @@
         <div class="container">
             {% block body %}{% endblock %} 
         </div>
+
+        <!-- Footer -->
+        <footer class="footer text-center text-lg-start">
+        <!-- Grid container -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Site conçu par</h5>
+                        <p>MPX Dev <br/> Développeuse Web Indépendante <br/>
+                        <a mailto:"contact@r3trobox.fr"></a>contact@r3trobox.fr</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+                        <h5 class="text-uppercase">Liens pratiques</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="{{ path('legal')}}" class="text-dark">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="https://cmpx.fr" class="text-dark">Site de la développeuse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-dark" href="https://cmpx.fr/">MPX-Dev</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
         
         {% block javascripts %}
         
